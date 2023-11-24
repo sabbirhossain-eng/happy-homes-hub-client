@@ -72,8 +72,8 @@ const NavBar = () => {
     </ul>
   );
   return (
-    <Navbar className=" z-10 rounded-none px-4 py-2 lg:px-8 lg:py-4 fixed mx-auto inset-x-0 max-w-screen-xl">
-      <div className="flex items-center justify-between text-white">
+    <Navbar className=" z-10 rounded-none px-4 py-2 lg:px-8 lg:py-4 fixed mx-auto inset-x-0 max-w-screen-2xl ">
+      <div className="flex items-center justify-between text-white ">
         <Typography
           as="a"
           href="#"

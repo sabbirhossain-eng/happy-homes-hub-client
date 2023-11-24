@@ -1,31 +1,28 @@
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import img1 from '../../../assets/Banner_cover/image.jpg';
-import img2 from '../../../assets/Banner_cover/image1.png';
-import img3 from '../../../assets/Banner_cover/image3.jpg';
-import img4 from '../../../assets/Banner_cover/image4.jpg';
-import Marquess from "./Marquess";
-import './style.css'
+import { Parallax } from "react-parallax";
+import img from '../../../assets/Banner/image2.jpg'
+
 const Banner = () => {
     return (
-        <Carousel className="w-full text-center">
-                <div>
-                    <img src={img1} />
-                    <div className="legend text-white"><Marquess/></div>
-                </div>
-                <div>
-                    <img src={img2} />
-                    <div className="legend text-white"><Marquess/></div>
-                </div>
-                <div>
-                    <img src={img3} />
-                    <div className="legend text-white"><Marquess/></div>
-                </div>
-                <div>
-                    <img src={img4} />
-                    <div className="legend text-white"><Marquess/></div>
-                </div>
-            </Carousel>
+        <Parallax
+        blur={{ min: -15, max: 15 }}
+        bgImage={img}
+        bgImageAlt="the dog"
+        strength={-200}
+      >
+        <div
+          className="hero max-w-screen-2xl h-[500px] border-[#f6ab4a] border-t-8 border-b-8 "
+        >
+          <div className="hero-overlay bg-opacity-60"></div>
+          <div className="hero-content text-center text-neutral-content">
+            <div className="max-w-lg">
+              <h1 className="mb-5 text-5xl font-bold uppercase">Happy Home Hub</h1>
+              <p className="mb-5">
+              Pet adoption is the compassionate act of providing a home and care for an animal in need.
+              </p>
+            </div>
+          </div>
+        </div>
+      </Parallax>
     );
 };
 
