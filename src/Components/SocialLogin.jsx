@@ -3,10 +3,11 @@ import { useNavigate } from "react-router-dom";
 import useAxiosPublic from "../Hooks/useAxiosPublic";
 import useAuth from "../Hooks/useAuth";
 import { FaGithub } from "react-icons/fa";
+import toast from "react-hot-toast";
 
 
 const SocialLogin = () => {
-  const {googleSignIn} = useAuth()
+  const {googleSignIn, githubSignIn} = useAuth()
     const axiosPublic = useAxiosPublic();
     const navigate = useNavigate();
 
@@ -15,10 +16,12 @@ const SocialLogin = () => {
     const handleGoogleSignIn = () =>{
         googleSignIn()
         .then(res =>{
-            console.log(res.data)
+          toast.success("Login Successfully!");
             const userInfo ={
                 email: res.user?.email,
-                name: res.user?.displayName
+                name: res.user?.displayName,
+                image: res.user?.photoURL,
+                role: 'user'
             }
 
             axiosPublic.post('/users', userInfo)
@@ -30,8 +33,22 @@ const SocialLogin = () => {
     };
 
     const handleGithubSignIn = () =>{
+      githubSignIn()
+      .then(res =>{
+        toast.success("Login Successfully!");
+        const userInfo ={
+            email: res.user?.email,
+            name: res.user?.displayName,
+            image: res.user?.photoURL,
+            role: 'user'
+        }
 
-      
+        axiosPublic.post('/users', userInfo)
+        .then(res =>{
+            console.log(res.data)
+            navigate(from, { replace: true });
+        })
+    })
     }
     return (
       <div>
