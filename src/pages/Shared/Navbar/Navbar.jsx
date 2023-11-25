@@ -6,7 +6,7 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const NavBar = () => {
   const [openNav, setOpenNav] = useState(false);
@@ -84,9 +84,11 @@ const NavBar = () => {
         <div className="flex items-center gap-4">
           <div className="mr-4 hidden lg:block">{navList}</div>
           <div className="flex items-center gap-x-1">
+            <Link to="/login">
             <Button variant="text" size="sm" className="hidden lg:inline-block">
               <span>Log In</span>
             </Button>
+            </Link>
           </div>
           <IconButton
             variant="text"
