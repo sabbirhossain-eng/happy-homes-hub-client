@@ -11,10 +11,10 @@ const Dashboard = () => {
         <div className="flex">
         {/* sidebar */}
         <div className="w-56 min-h-screen bg-[#4e2c2c]  text-white">
-          <ul className="menu  font-semibold uppercase">
+          <ul className="menu  font-semibold uppercase space-y-4">
             {isAdmin ? (
               <>
-                <li>
+                <div>
                   <NavLink
                     to="/dashboard/adminHome"
                     className={" font-semibold uppercase"}
@@ -22,23 +22,63 @@ const Dashboard = () => {
                     
                     Admin Home
                   </NavLink>
-                </li>
+                </div>
               </>
             ) : (
               <>
-                <li>
+                <div>
                   
                   {user?.displayName}
-                </li>
+                </div>
                  <div className="divider"></div>
-                <li>
+                <div>
                   <NavLink
                     to="/dashboard/addPet"
                     className={({ isActive }) => (isActive ? "text-white bg-[#f6ab4a] p-1 rounded" : "")}
                   >
                   Add a Pet
                   </NavLink>
-                </li>
+                </div>
+                <div>
+                  <NavLink
+                    to="/dashboard/myAddedPets"
+                    className={({ isActive }) => (isActive ? "text-white bg-[#f6ab4a] p-1 rounded" : "")}
+                  >
+                  My added Pets
+                  </NavLink>
+                </div>
+                <div>
+                  <NavLink
+                    to="/dashboard/adoptionReq"
+                    className={({ isActive }) => (isActive ? "text-white bg-[#f6ab4a] p-1 rounded" : "")}
+                  >
+                  Adoption Request
+                  </NavLink>
+                </div>
+                <div>
+                  <NavLink
+                    to="/dashboard/createDonation"
+                    className={({ isActive }) => (isActive ? "text-white bg-[#f6ab4a] p-1 rounded" : "")}
+                  >
+                  Create Donation Campaign
+                  </NavLink>
+                </div>
+                <div>
+                  <NavLink
+                    to="/dashboard/MyDonationCampaign"
+                    className={({ isActive }) => (isActive ? "text-white bg-[#f6ab4a] p-1 rounded" : "")}
+                  >
+                  My Donation Campaign
+                  </NavLink>
+                </div>
+                <div>
+                  <NavLink
+                    to="/dashboard/myDonations"
+                    className={({ isActive }) => (isActive ? "text-white bg-[#f6ab4a] p-1 rounded" : "")}
+                  >
+                  My Donations
+                  </NavLink>
+                </div>
               </>
             )}
           </ul>
