@@ -10,6 +10,7 @@ import AdoptionRequest from "../pages/Dashboard/AdoptionRequest/AdoptionRequest"
 import CreateDonationCampaign from "../pages/Dashboard/CreateDonationCampaign/CreateDonationCampaign";
 import MyDonationCampaigns from "../pages/Dashboard/MyDonationCampaigns/MyDonationCampaigns";
 import MyDonations from "../pages/Dashboard/MyDonations/MyDonations";
+import PetListing from "../pages/PetListing/PetListing";
 
 export const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ export const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: '/petListing',
+        element: <PetListing/>
       },
       {
         path: "/signUp",

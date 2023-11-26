@@ -129,7 +129,7 @@ console.log(image);
                 <Field
                   as="select"
                   name="category"
-                  className="m-1 btn"
+                  className="m-1 btn bg-white text-black hover:bg-yellow-50 font-normal"
                   value={values.category}
                   onChange={(e) => {
                     handleChange(e);
