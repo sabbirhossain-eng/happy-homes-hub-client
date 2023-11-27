@@ -28,12 +28,12 @@ const SignUp = () => {
     });
 
     if (res.data.success) {
-      createUser(data.email, data.password).then((result) => {
+      createUser(data.email, data.password)
+      .then((result) => {
         const logger = result.user;
         console.log(logger);
-        signUpUpdateProfile(data.name, data.photo)
+        signUpUpdateProfile(data.name, res.data.data.display_url)
           .then(() => {
-            // create a user in the database add...
             const userInfo = {
               name: data.name,
               email: data.email,

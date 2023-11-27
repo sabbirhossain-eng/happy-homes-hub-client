@@ -17,6 +17,7 @@ const SocialLogin = () => {
         googleSignIn()
         .then(res =>{
           toast.success("Login Successfully!");
+          navigate(from, { replace: true });
             const userInfo ={
                 email: res.user?.email,
                 name: res.user?.displayName,
@@ -36,6 +37,7 @@ const SocialLogin = () => {
       githubSignIn()
       .then(res =>{
         toast.success("Login Successfully!");
+        navigate(from, { replace: true });
         const userInfo ={
             email: res.user?.email,
             name: res.user?.displayName,

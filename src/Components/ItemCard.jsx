@@ -6,6 +6,7 @@ import {
   Typography,
   Button,
 } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 
 const ItemCard = ({item}) => {
   return (
@@ -27,9 +28,11 @@ const ItemCard = ({item}) => {
           </Typography>
         </CardBody>
         <CardFooter className="flex justify-center gap-7 pt-2">
+          <Link to={`/details/${item._id}`}>
           <Button className="btn bg-[#f6ab4a]">
             Details
           </Button>
+          </Link>
         </CardFooter>
       </Card>
     </div>
