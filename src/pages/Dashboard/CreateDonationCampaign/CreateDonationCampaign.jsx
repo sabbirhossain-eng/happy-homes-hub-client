@@ -12,7 +12,7 @@ import useAuth from "../../../Hooks/useAuth";
 const CreateDonationCampaign = () => {
   const axiosPublic = useAxiosPublic();
   const axiosSecure = useAxiosSecure();
-  const {user} = useAuth();
+  const { user } = useAuth();
   const [lastDate, setLastDate] = useState("");
   const imageHost = useImageHost();
   const [image, setImage] = useState(null);
@@ -41,20 +41,22 @@ const CreateDonationCampaign = () => {
     if (res && res.data.success) {
       const createItems = {
         image: res.data.data.display_url,
+        name: values.name,
         lastDate: lastDate,
+        amount: parseFloat(values.amount),
         short_description: values.shortDescription,
         description: values.longDescription,
         donation: true,
         date: moment().utc().toDate(),
         email: user.email,
       };
-      console.log(createItems)
+      console.log(createItems);
 
       const createRes = await axiosSecure.post("/createDonation", createItems);
       console.log(createRes);
       if (createRes.data.insertedId) {
         resetForm();
-        toast.success('Donation campaign is created successfully');
+        toast.success("Donation campaign is created successfully");
       }
     }
   };
@@ -73,9 +75,12 @@ const CreateDonationCampaign = () => {
           validate={(values) => {
             const errors = {};
             if (values.amount && parseFloat(values.amount) > 50) {
-                errors.amount = "Maximum donation amount must be $50 or less";
-              }
-      
+              errors.amount = "Maximum donation amount must be $50 or less";
+            }
+
+            if (!values.name) {
+              errors.name = "Name is Required";
+            }
             if (!values.LastDate) {
               errors.LastDate = "Date is Required";
             }
@@ -88,10 +93,10 @@ const CreateDonationCampaign = () => {
             return errors;
           }}
         >
-          
-            {({ handleChange, values, }) =>(<Form className="space-y-6">
+          {({ handleChange, values }) => (
+            <Form className="space-y-6">
               <div className="flex gap-6 items-center">
-              <div className="form-control w-full flex-1">
+                <div className="form-control w-full flex-1">
                   <label className="label">
                     <span className="label-text">Pet Image*</span>
                   </label>
@@ -125,11 +130,25 @@ const CreateDonationCampaign = () => {
                     className="text-red-500"
                   />
                 </div>
-                
               </div>
               <div className="flex items-center gap-6">
-                
-                <div className="form-control w-full">
+                <div className="flex-1 form-control w-full ">
+                  <label className="label">
+                    <span className="label-text">Pet Name*</span>
+                  </label>
+                  <Field
+                    type="text"
+                    name="name"
+                    placeholder="Pet name"
+                    className="input input-bordered w-full"
+                  />
+                  <ErrorMessage
+                    name="name"
+                    component="div"
+                    className="text-red-500"
+                  />
+                </div>
+                <div className="flex-1 form-control w-full">
                   <label className="label">
                     <span className="label-text">Date*</span>
                   </label>
