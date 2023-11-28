@@ -20,7 +20,7 @@ const PetListing = () => {
 
   const adoptedItems = items.filter(
     (item) =>
-      item.property === "adopted" &&
+      item.adopted === false &&
       (item.name.toLowerCase().startsWith(searchItem.toLowerCase()) ||
         searchItem === "") &&
       (searchCategory === "all" || item.category === searchCategory)

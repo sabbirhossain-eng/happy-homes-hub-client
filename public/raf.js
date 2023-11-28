@@ -7,7 +7,7 @@
     note: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda possimus quos doloribus aliquid eveniet. Sequi placeat excepturi sit error aliquid quam soluta est pariatur id saepe aspernatur voluptates nisi veniam, hic sunt, voluptatibus, enim fuga omnis iusto? Reiciendis sint deserunt voluptate quae, libero neque nihil eos fuga, dignissimos quisquam, exercitationem dolore qui quis repudiandae aspernatur voluptatum ipsum error voluptates similique nam molestias dolorum rem. Aperiam nemo officia repudiandae, quibusdam facilis eius neque ex ipsam distinctio voluptate provident eaque. Architecto nesciunt harum modi soluta ipsum aspernatur delectus nihil illum molestias voluptates, iste tempora minus dolorem magni quibusdam ut quia, ullam quidem.",
     image: "https://i.ibb.co/0r8ZRK4/Cat-August-2010-4.jpg",
-    property: "adopted",
+    adopted: false,
     date: "2023-11-26T15:19:33.557Z",
   },
   {
@@ -18,7 +18,7 @@
     note: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda possimus quos doloribus aliquid eveniet. Sequi placeat excepturi sit error aliquid quam soluta est pariatur id saepe aspernatur voluptates nisi veniam, hic sunt, voluptatibus, enim fuga omnis iusto? Reiciendis sint deserunt voluptate quae, libero neque nihil eos fuga, dignissimos quisquam, exercitationem dolore qui quis repudiandae aspernatur voluptatum ipsum error voluptates similique nam molestias dolorum rem. Aperiam nemo officia repudiandae, quibusdam facilis eius neque ex ipsam distinctio voluptate provident eaque. Architecto nesciunt harum modi soluta ipsum aspernatur delectus nihil illum molestias voluptates, iste tempora minus dolorem magni quibusdam ut quia, ullam quidem.",
     image: "https://i.ibb.co/w673D7n/image.png",
-    property: "adopted",
+    adopted: false,
     date: "2023-11-25T15:19:33.557Z",
   },
   {
@@ -29,7 +29,7 @@
     note: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda possimus quos doloribus aliquid eveniet. Sequi placeat excepturi sit error aliquid quam soluta est pariatur id saepe aspernatur voluptates nisi veniam, hic sunt, voluptatibus, enim fuga omnis iusto? Reiciendis sint deserunt voluptate quae, libero neque nihil eos fuga, dignissimos quisquam, exercitationem dolore qui quis repudiandae aspernatur voluptatum ipsum error voluptates similique nam molestias dolorum rem. Aperiam nemo officia repudiandae, quibusdam facilis eius neque ex ipsam distinctio voluptate provident eaque. Architecto nesciunt harum modi soluta ipsum aspernatur delectus nihil illum molestias voluptates, iste tempora minus dolorem magni quibusdam ut quia, ullam quidem.",
     image: "https://i.ibb.co/sVCnxRd/image.png",
-    property: "adopted",
+    adopted: false,
     date: "2023-11-24T15:19:33.557Z",
   },
   {
@@ -40,7 +40,7 @@
     note: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda possimus quos doloribus aliquid eveniet. Sequi placeat excepturi sit error aliquid quam soluta est pariatur id saepe aspernatur voluptates nisi veniam, hic sunt, voluptatibus, enim fuga omnis iusto? Reiciendis sint deserunt voluptate quae, libero neque nihil eos fuga, dignissimos quisquam, exercitationem dolore qui quis repudiandae aspernatur voluptatum ipsum error voluptates similique nam molestias dolorum rem. Aperiam nemo officia repudiandae, quibusdam facilis eius neque ex ipsam distinctio voluptate provident eaque. Architecto nesciunt harum modi soluta ipsum aspernatur delectus nihil illum molestias voluptates, iste tempora minus dolorem magni quibusdam ut quia, ullam quidem.",
     image: "https://i.ibb.co/Fq2WQmq/image.png",
-    property: "adopted",
+    adopted: false,
     date: "2023-11-20T15:19:33.557Z",
   },
   {
@@ -51,7 +51,7 @@
     note: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda possimus quos doloribus aliquid eveniet. Sequi placeat excepturi sit error aliquid quam soluta est pariatur id saepe aspernatur voluptates nisi veniam, hic sunt, voluptatibus, enim fuga omnis iusto? Reiciendis sint deserunt voluptate quae, libero neque nihil eos fuga, dignissimos quisquam, exercitationem dolore qui quis repudiandae aspernatur voluptatum ipsum error voluptates similique nam molestias dolorum rem. Aperiam nemo officia repudiandae, quibusdam facilis eius neque ex ipsam distinctio voluptate provident eaque. Architecto nesciunt harum modi soluta ipsum aspernatur delectus nihil illum molestias voluptates, iste tempora minus dolorem magni quibusdam ut quia, ullam quidem.",
     image: "https://i.ibb.co/nb3rqMV/image.png",
-    property: "adopted",
+    adopted: false,
     date: "2023-11-20T15:19:33.557Z",
   },
   {
@@ -62,7 +62,7 @@
     note: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda possimus quos doloribus aliquid eveniet. Sequi placeat excepturi sit error aliquid quam soluta est pariatur id saepe aspernatur voluptates nisi veniam, hic sunt, voluptatibus, enim fuga omnis iusto? Reiciendis sint deserunt voluptate quae, libero neque nihil eos fuga, dignissimos quisquam, exercitationem dolore qui quis repudiandae aspernatur voluptatum ipsum error voluptates similique nam molestias dolorum rem. Aperiam nemo officia repudiandae, quibusdam facilis eius neque ex ipsam distinctio voluptate provident eaque. Architecto nesciunt harum modi soluta ipsum aspernatur delectus nihil illum molestias voluptates, iste tempora minus dolorem magni quibusdam ut quia, ullam quidem.",
     image: "https://i.ibb.co/6sQWSrm/image.png",
-    property: "adopted",
+    adopted: false,
     date: "2023-11-22T15:19:33.557Z",
   },
   {
@@ -73,7 +73,7 @@
     note: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda possimus quos doloribus aliquid eveniet. Sequi placeat excepturi sit error aliquid quam soluta est pariatur id saepe aspernatur voluptates nisi veniam, hic sunt, voluptatibus, enim fuga omnis iusto? Reiciendis sint deserunt voluptate quae, libero neque nihil eos fuga, dignissimos quisquam, exercitationem dolore qui quis repudiandae aspernatur voluptatum ipsum error voluptates similique nam molestias dolorum rem. Aperiam nemo officia repudiandae, quibusdam facilis eius neque ex ipsam distinctio voluptate provident eaque. Architecto nesciunt harum modi soluta ipsum aspernatur delectus nihil illum molestias voluptates, iste tempora minus dolorem magni quibusdam ut quia, ullam quidem.",
     image: "https://i.ibb.co/kDVy614/image.png",
-    property: "adopted",
+    adopted: false,
     date: "2023-11-23T15:19:33.557Z",
   },
   {
@@ -84,7 +84,7 @@
     note: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda possimus quos doloribus aliquid eveniet. Sequi placeat excepturi sit error aliquid quam soluta est pariatur id saepe aspernatur voluptates nisi veniam, hic sunt, voluptatibus, enim fuga omnis iusto? Reiciendis sint deserunt voluptate quae, libero neque nihil eos fuga, dignissimos quisquam, exercitationem dolore qui quis repudiandae aspernatur voluptatum ipsum error voluptates similique nam molestias dolorum rem. Aperiam nemo officia repudiandae, quibusdam facilis eius neque ex ipsam distinctio voluptate provident eaque. Architecto nesciunt harum modi soluta ipsum aspernatur delectus nihil illum molestias voluptates, iste tempora minus dolorem magni quibusdam ut quia, ullam quidem.",
     image: "https://i.ibb.co/kJLZhb3/image.png",
-    property: "adopted",
+    adopted: false,
     date: "2023-11-27T15:19:33.557Z",
   },
   {
@@ -95,7 +95,7 @@
     note: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda possimus quos doloribus aliquid eveniet. Sequi placeat excepturi sit error aliquid quam soluta est pariatur id saepe aspernatur voluptates nisi veniam, hic sunt, voluptatibus, enim fuga omnis iusto? Reiciendis sint deserunt voluptate quae, libero neque nihil eos fuga, dignissimos quisquam, exercitationem dolore qui quis repudiandae aspernatur voluptatum ipsum error voluptates similique nam molestias dolorum rem. Aperiam nemo officia repudiandae, quibusdam facilis eius neque ex ipsam distinctio voluptate provident eaque. Architecto nesciunt harum modi soluta ipsum aspernatur delectus nihil illum molestias voluptates, iste tempora minus dolorem magni quibusdam ut quia, ullam quidem.",
     image: "https://i.ibb.co/FVWpQ6N/image.png",
-    property: "adopted",
+    adopted: false,
     date: "2023-11-27T15:19:33.557Z",
   },
   
@@ -107,7 +107,7 @@
     note: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda possimus quos doloribus aliquid eveniet. Sequi placeat excepturi sit error aliquid quam soluta est pariatur id saepe aspernatur voluptates nisi veniam, hic sunt, voluptatibus, enim fuga omnis iusto? Reiciendis sint deserunt voluptate quae, libero neque nihil eos fuga, dignissimos quisquam, exercitationem dolore qui quis repudiandae aspernatur voluptatum ipsum error voluptates similique nam molestias dolorum rem. Aperiam nemo officia repudiandae, quibusdam facilis eius neque ex ipsam distinctio voluptate provident eaque. Architecto nesciunt harum modi soluta ipsum aspernatur delectus nihil illum molestias voluptates, iste tempora minus dolorem magni quibusdam ut quia, ullam quidem.",
     image: "https://i.ibb.co/ts8BbtC/image.png",
-    property: "adopted",
+    adopted: false,
     date: "2023-11-28T15:19:33.557Z",
   },
   {
@@ -118,7 +118,7 @@
     note: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda possimus quos doloribus aliquid eveniet. Sequi placeat excepturi sit error aliquid quam soluta est pariatur id saepe aspernatur voluptates nisi veniam, hic sunt, voluptatibus, enim fuga omnis iusto? Reiciendis sint deserunt voluptate quae, libero neque nihil eos fuga, dignissimos quisquam, exercitationem dolore qui quis repudiandae aspernatur voluptatum ipsum error voluptates similique nam molestias dolorum rem. Aperiam nemo officia repudiandae, quibusdam facilis eius neque ex ipsam distinctio voluptate provident eaque. Architecto nesciunt harum modi soluta ipsum aspernatur delectus nihil illum molestias voluptates, iste tempora minus dolorem magni quibusdam ut quia, ullam quidem.",
     image: "https://i.ibb.co/tcJggwZ/image.png",
-    property: "adopted",
+    adopted: false,
     date: "2023-11-25T15:19:33.557Z",
   },
   {
@@ -129,7 +129,7 @@
     note: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda possimus quos doloribus aliquid eveniet. Sequi placeat excepturi sit error aliquid quam soluta est pariatur id saepe aspernatur voluptates nisi veniam, hic sunt, voluptatibus, enim fuga omnis iusto? Reiciendis sint deserunt voluptate quae, libero neque nihil eos fuga, dignissimos quisquam, exercitationem dolore qui quis repudiandae aspernatur voluptatum ipsum error voluptates similique nam molestias dolorum rem. Aperiam nemo officia repudiandae, quibusdam facilis eius neque ex ipsam distinctio voluptate provident eaque. Architecto nesciunt harum modi soluta ipsum aspernatur delectus nihil illum molestias voluptates, iste tempora minus dolorem magni quibusdam ut quia, ullam quidem.",
     image: "https://i.ibb.co/BZQpSvJ/image.png",
-    property: "adopted",
+    adopted: false,
     date: "2023-11-24T15:19:33.557Z",
   },
   {
@@ -140,7 +140,7 @@
     note: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda possimus quos doloribus aliquid eveniet. Sequi placeat excepturi sit error aliquid quam soluta est pariatur id saepe aspernatur voluptates nisi veniam, hic sunt, voluptatibus, enim fuga omnis iusto? Reiciendis sint deserunt voluptate quae, libero neque nihil eos fuga, dignissimos quisquam, exercitationem dolore qui quis repudiandae aspernatur voluptatum ipsum error voluptates similique nam molestias dolorum rem. Aperiam nemo officia repudiandae, quibusdam facilis eius neque ex ipsam distinctio voluptate provident eaque. Architecto nesciunt harum modi soluta ipsum aspernatur delectus nihil illum molestias voluptates, iste tempora minus dolorem magni quibusdam ut quia, ullam quidem.",
     image: "https://i.ibb.co/SN19PL8/image.png",
-    property: "adopted",
+    adopted: false,
     date: "2023-11-24T15:19:33.557Z",
   },
   {
@@ -151,7 +151,7 @@
     note: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda possimus quos doloribus aliquid eveniet. Sequi placeat excepturi sit error aliquid quam soluta est pariatur id saepe aspernatur voluptates nisi veniam, hic sunt, voluptatibus, enim fuga omnis iusto? Reiciendis sint deserunt voluptate quae, libero neque nihil eos fuga, dignissimos quisquam, exercitationem dolore qui quis repudiandae aspernatur voluptatum ipsum error voluptates similique nam molestias dolorum rem. Aperiam nemo officia repudiandae, quibusdam facilis eius neque ex ipsam distinctio voluptate provident eaque. Architecto nesciunt harum modi soluta ipsum aspernatur delectus nihil illum molestias voluptates, iste tempora minus dolorem magni quibusdam ut quia, ullam quidem.",
     image: "https://i.ibb.co/y0GPXjH/image.png",
-    property: "adopted",
+    adopted: false,
     date: "2023-11-27T15:19:33.557Z",
   },
   {
@@ -162,7 +162,7 @@
     note: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda possimus quos doloribus aliquid eveniet. Sequi placeat excepturi sit error aliquid quam soluta est pariatur id saepe aspernatur voluptates nisi veniam, hic sunt, voluptatibus, enim fuga omnis iusto? Reiciendis sint deserunt voluptate quae, libero neque nihil eos fuga, dignissimos quisquam, exercitationem dolore qui quis repudiandae aspernatur voluptatum ipsum error voluptates similique nam molestias dolorum rem. Aperiam nemo officia repudiandae, quibusdam facilis eius neque ex ipsam distinctio voluptate provident eaque. Architecto nesciunt harum modi soluta ipsum aspernatur delectus nihil illum molestias voluptates, iste tempora minus dolorem magni quibusdam ut quia, ullam quidem.",
     image: "https://i.ibb.co/1836ys0/image.png",
-    property: "adopted",
+    adopted: false,
     date: "2023-11-26T15:19:33.557Z",
   },
   {
@@ -173,7 +173,7 @@
     note: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda possimus quos doloribus aliquid eveniet. Sequi placeat excepturi sit error aliquid quam soluta est pariatur id saepe aspernatur voluptates nisi veniam, hic sunt, voluptatibus, enim fuga omnis iusto? Reiciendis sint deserunt voluptate quae, libero neque nihil eos fuga, dignissimos quisquam, exercitationem dolore qui quis repudiandae aspernatur voluptatum ipsum error voluptates similique nam molestias dolorum rem. Aperiam nemo officia repudiandae, quibusdam facilis eius neque ex ipsam distinctio voluptate provident eaque. Architecto nesciunt harum modi soluta ipsum aspernatur delectus nihil illum molestias voluptates, iste tempora minus dolorem magni quibusdam ut quia, ullam quidem.",
     image: "https://i.ibb.co/bJC4fCK/image.png",
-    property: "adopted",
+    adopted: false,
     date: "2023-11-28T15:19:33.557Z",
   },
   

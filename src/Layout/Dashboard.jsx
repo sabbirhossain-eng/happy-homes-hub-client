@@ -18,10 +18,10 @@ const Dashboard = () => {
               <>
                 <div>
                   <NavLink
-                    to="/dashboard/adminHome"
+                    to="/dashboard/"
                     className={" font-semibold uppercase"}
                   >
-                    Admin Home
+                    AMin route added
                   </NavLink>
                 </div>
               </>

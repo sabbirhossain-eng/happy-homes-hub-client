@@ -43,7 +43,7 @@ console.log(image);
         note: values.note,
         description: values.description,
         image: res.data.data.display_url,
-        property: "adopted",
+        adopted: false,
         date: moment().utc().toDate(),
       };
 

@@ -109,7 +109,7 @@ const AdoptModal = ({ handleOpen, open }) => {
                 className=" btn bg-[#f6ab4a] text-white"
                 fullWidth
               >
-                Adopt Submit
+                Adopt Confirm
               </Button>
               <Typography variant="small" className="mt-4 flex justify-center">
                 <Typography
