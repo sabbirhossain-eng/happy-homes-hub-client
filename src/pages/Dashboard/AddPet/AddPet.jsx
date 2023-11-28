@@ -5,10 +5,14 @@ import useAxiosSecure from "../../../Hooks/useAxiosSecure";
 import useImageHost from "../../../Hooks/useImageHost";
 import toast from "react-hot-toast";
 import moment from "moment/moment";
+import { Helmet } from "react-helmet";
+import HeaderTitle from "../../../Components/HeaderTitle";
+import useAuth from "../../../Hooks/useAuth";
 
 const AddPet = () => {
   const axiosPublic = useAxiosPublic();
   const axiosSecure = useAxiosSecure();
+  const {user} = useAuth();
   const imageHost = useImageHost();
   const [selectedCategory, setSelectedCategory] = useState("");
   const [image, setImage] = useState(null);
@@ -21,20 +25,20 @@ const AddPet = () => {
     note: "",
     description: "",
   };
-console.log(image);
-  const onSubmit = async (values, { resetForm }) => {
-    console.log(values);
+ console.log(image);
+
+ const onSubmit = async (values, { resetForm }) => {
+  try {
     const imageData = new FormData();
     imageData.append("image", image);
-   console.log(imageData);
-    const  res = await axiosPublic.post(imageHost, imageData, {
+
+    const res = await axiosPublic.post(imageHost, imageData, {
       headers: {
         "content-type": "multipart/form-data",
       },
     });
 
-    console.log(res);
-    if (res && res.data.success) {
+    if (res.data.success) {
       const petItems = {
         name: values.name,
         category: selectedCategory,
@@ -45,19 +49,34 @@ console.log(image);
         image: res.data.data.display_url,
         adopted: false,
         date: moment().utc().toDate(),
+        email: user.email,
       };
 
       const petsRes = await axiosSecure.post("/pets", petItems);
-      console.log(petsRes);
+
       if (petsRes.data.insertedId) {
         resetForm();
         toast.success(`${petItems.name} is added as a pet`);
+      } else {
+        toast.error(58, "Failed to add the pet");
       }
+    } else {
+      toast.error(61, "Image upload failed");
     }
-  };
+  } catch (error) {
+    console.error("64, Error ", error);
+    toast.error("An error occurred. Please try again later!");
+  }
+};
 
   return (
     <div>
+      <Helmet>
+        <title>Happy Homes | Dashboard</title>
+      </Helmet>
+      <div>
+        <HeaderTitle title={"Add Pet"} />
+      </div>
       <Formik
         initialValues={initialValues}
         onSubmit={onSubmit}

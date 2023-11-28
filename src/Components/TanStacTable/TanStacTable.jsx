@@ -59,7 +59,7 @@ const TanStacTable = ({ data, refetch }) => {
   const handleAdopted = async (data) => {
     setAdoptedValue(!adoptedValue);
 
-    await axiosSecure.patch(`/pets/users/${data._id}`, {
+    await axiosSecure.patch(`/pets/adopted/${data._id}`, {
         adopted: !adoptedValue,
       })
       .then((res) => {
@@ -95,6 +95,7 @@ const TanStacTable = ({ data, refetch }) => {
       }
     });
   };
+console.log(data[0]);
 
   return (
     <div>
@@ -113,16 +114,17 @@ const TanStacTable = ({ data, refetch }) => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {data
-              .slice(sliceData, sliceData + rowsPerPage)
+            {data.length > 0 &&
+              data.slice(sliceData, sliceData + rowsPerPage)
               .map((pet, index) => (
                 <StyledTableRow key={pet._id}>
                   <StyledTableCell component="th" scope="row">
                     {index + 1}
                   </StyledTableCell>
+                  
                   <StyledTableCell align="right">
                     <img
-                      src={pet.img}
+                      src={pet.image}
                       alt={`Image of ${pet.name}`}
                       style={{ width: "50px", height: "50px" }}
                     />
