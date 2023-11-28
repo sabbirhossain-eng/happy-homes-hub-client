@@ -57,17 +57,18 @@ const MyDonationCamCart = ({data, refetch}) => {
   const handleCampaign = async (data) => {
     setCampaignValue(!campaignValue);
 
-    await axiosSecure.patch(`/createDonation_edit/${data._id}`, {
+    await axiosSecure.patch(`/createDonation_status/${data._id}`, {
         donation: !campaignValue,
       })
       .then((res) => {
         console.log(res.data);
         if (res.data.modifiedCount > 0) {
           refetch();
-          toast.success(`${data.name} adopted change`);
+          toast.success(`${data.name} Campaign Status change`);
         }
       });
   };
+
 
 
 console.log(data[0]);
@@ -129,7 +130,7 @@ console.log(data[0]);
                   </StyledTableCell>
                   {/* Editors btn */}
                   <StyledTableCell align="right">
-                    <Link to={`/dashboard/petUpdate/${pet._id}`}>
+                    <Link to={`/dashboard/campaignEdit/${pet._id}`}>
                     <Button>
                     <BorderColorIcon color="warning" />
                     </Button>
