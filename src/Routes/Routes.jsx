@@ -21,12 +21,13 @@ import DonationCampDetails from "../pages/DonationCampaigns/DonationCampDetails"
 import Users from "../pages/Dashboard/Users/Users";
 import AdminRoute from "./AdminRoute";
 import AllPets from "../pages/Dashboard/AllPets/AllPets";
+import AllDonations from "../pages/Dashboard/AllDonations/AllDonations";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <Main />,
-    errorElement: <ErrorElements/>,
+    errorElement: <ErrorElements />,
     children: [
       {
         path: "/",
@@ -38,23 +39,27 @@ export const router = createBrowserRouter([
       },
       {
         path: "/details/:id",
-        element: <PrivetRoute>
-          <ItemDetails />
-        </PrivetRoute>,
+        element: (
+          <PrivetRoute>
+            <ItemDetails />
+          </PrivetRoute>
+        ),
         loader: ({ params }) =>
           fetch(`http://localhost:5000/pets/${params.id}`),
       },
       {
-        path: '/donationCampaigns',
-        element:<DonationCampaigns/>
+        path: "/donationCampaigns",
+        element: <DonationCampaigns />,
       },
       {
         path: "/donationDetails/:id",
-        element: <PrivetRoute>
-          <DonationCampDetails/>
-        </PrivetRoute>,
+        element: (
+          <PrivetRoute>
+            <DonationCampDetails />
+          </PrivetRoute>
+        ),
         loader: ({ params }) =>
-        fetch(`http://localhost:5000/donations/${params.id}`),
+          fetch(`http://localhost:5000/donations/${params.id}`),
       },
       {
         path: "/signUp",
@@ -84,9 +89,10 @@ export const router = createBrowserRouter([
         element: <MyAddedPets />,
       },
       {
-        path:"petUpdate/:id",
-        element: <PetUpdate/>,
-        loader: ({params}) => fetch(`http://localhost:5000/pets/${params.id}`)
+        path: "petUpdate/:id",
+        element: <PetUpdate />,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/pets/${params.id}`),
       },
       {
         path: "adoptionReq",
@@ -101,9 +107,10 @@ export const router = createBrowserRouter([
         element: <MyDonationCampaigns />,
       },
       {
-        path: 'campaignEdit/:id',
-        element: <CampaignEdit/>,
-        loader: ({params}) => fetch(`http://localhost:5000/donations/${params.id}`)
+        path: "campaignEdit/:id",
+        element: <CampaignEdit />,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/donations/${params.id}`),
       },
       {
         path: "myDonations",
@@ -111,14 +118,21 @@ export const router = createBrowserRouter([
       },
       // Admin Route
       {
-        path:'admin_users',
-        element:<Users/>
+        path: "admin_users",
+        element: (
+          <AdminRoute>
+            <Users />
+          </AdminRoute>
+        ),
       },
       {
-        path:'allPets',
-        element: <AllPets/>
-
-      }
+        path: "allPets",
+        element: <AllPets />,
+      },
+      {
+        path: "allDonations",
+        element: <AllDonations />,
+      },
     ],
   },
 ]);

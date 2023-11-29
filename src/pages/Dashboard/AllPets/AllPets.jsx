@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import useAxiosSecure from "../../../Hooks/useAxiosSecure";
 import { useQuery } from "@tanstack/react-query";
+import TanStacTable from "../../../Components/TanStacTable/TanStacTable";
 
 const AllPets = () => {
     const axiosSecure = useAxiosSecure();
@@ -9,7 +10,7 @@ const AllPets = () => {
       
       queryKey: ['allPets'],
       queryFn: async () => {
-        const res = await axiosSecure.get(`/pets_by_email/${user.email}`);
+        const res = await axiosSecure.get('/pets/admin');
         
         return res.data;
       },
@@ -19,6 +20,9 @@ const AllPets = () => {
       <Helmet>
         <title>Happy Homes | Dashboard</title>
       </Helmet>
+      <div>
+        <TanStacTable data={allPets} refetch={refetch}/>
+      </div>
     </div>
   );
 };
