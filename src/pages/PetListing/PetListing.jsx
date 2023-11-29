@@ -3,7 +3,7 @@ import useAxiosPublic from "../../Hooks/useAxiosPublic";
 import ItemCard from "../../Components/ItemCard";
 import { useState } from "react";
 import { FaSearchengin } from "react-icons/fa6";
-
+import { Helmet } from "react-helmet";
 
 const PetListing = () => {
   const axiosPublic = useAxiosPublic();
@@ -41,6 +41,9 @@ const PetListing = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Happy Homes | Pet Listing</title>
+      </Helmet>
       <div className="flex justify-center items-center gap-2">
         <div>
           <input
@@ -52,11 +55,14 @@ const PetListing = () => {
           />
         </div>
         <div>
-            <FaSearchengin className="text-[#4e2c2c] text-4xl  "/>
+          <FaSearchengin className="text-[#4e2c2c] text-4xl  " />
         </div>
         <div>
-          <select className="select select-warning w-full"
-          value={searchCategory} onChange={handleCategoryChange}>
+          <select
+            className="select select-warning w-full"
+            value={searchCategory}
+            onChange={handleCategoryChange}
+          >
             <option value="all">All Categories</option>
             <option value="cat">Cat</option>
             <option value="dog">Dog</option>

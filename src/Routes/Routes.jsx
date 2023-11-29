@@ -16,6 +16,8 @@ import PrivetRoute from "./PrivetRoute";
 import ErrorElements from "../pages/ErrorPage/ErrorElement";
 import PetUpdate from "../pages/Dashboard/PetUpate/PetUpdate";
 import CampaignEdit from "../pages/Dashboard/CampaignEdit/CampaignEdit";
+import DonationCampaigns from "../pages/DonationCampaigns/DonationCampaigns";
+import DonationCampDetails from "../pages/DonationCampaigns/DonationCampDetails";
 
 export const router = createBrowserRouter([
   {
@@ -33,9 +35,23 @@ export const router = createBrowserRouter([
       },
       {
         path: "/details/:id",
-        element: <ItemDetails />,
+        element: <PrivetRoute>
+          <ItemDetails />
+        </PrivetRoute>,
         loader: ({ params }) =>
           fetch(`http://localhost:5000/pets/${params.id}`),
+      },
+      {
+        path: '/donationCampaigns',
+        element:<DonationCampaigns/>
+      },
+      {
+        path: "/donationDetails/:id",
+        element: <PrivetRoute>
+          <DonationCampDetails/>
+        </PrivetRoute>,
+        loader: ({ params }) =>
+        fetch(`http://localhost:5000/donations/${params.id}`),
       },
       {
         path: "/signUp",
@@ -66,7 +82,7 @@ export const router = createBrowserRouter([
       },
       {
         path:"petUpdate/:id",
-        element: <PetUpdate></PetUpdate>,
+        element: <PetUpdate/>,
         loader: ({params}) => fetch(`http://localhost:5000/pets/${params.id}`)
       },
       {

@@ -53,20 +53,8 @@ const NavBar = () => {
       >
         <NavLink 
          className={({ isActive }) => (isActive ? "text-[#f6ab4a] outline p-1 rounded" : "")}
-        to="/donation" >
-          Donation
-        </NavLink>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
-      >
-        <NavLink 
-         className={({ isActive }) => (isActive ? "text-[#f6ab4a] outline p-1 rounded" : "")}
-        to="/campaigns" >
-          Campaigns
+        to="/donationCampaigns" >
+          Donation Campaigns
         </NavLink>
       </Typography>
     </ul>

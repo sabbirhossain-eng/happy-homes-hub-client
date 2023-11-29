@@ -44,6 +44,7 @@ const CreateDonationCampaign = () => {
         name: values.name,
         lastDate: lastDate,
         amount: parseFloat(values.amount),
+        donationAmount: '',
         short_description: values.shortDescription,
         description: values.longDescription,
         donation: true,
