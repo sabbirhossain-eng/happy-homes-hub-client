@@ -76,7 +76,7 @@ const NavLogged = () => {
                       </Typography>
                     </div>
                     <div className="bg-[#4e2c2c] text-center rounded-md">
-                      <Link to="/dashboard/addPet">
+                      <Link to="/dashboard">
                         <Typography variant="h4" className=" font-normal ">
                           Dashboard
                         </Typography>

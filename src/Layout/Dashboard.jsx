@@ -1,10 +1,10 @@
 import { NavLink, Outlet } from "react-router-dom";
-import useAdmin from "../Hooks/useAdmin";
 import useAuth from "../Hooks/useAuth";
 import NavbarDashboard from "../pages/Shared/Navbar/NavbarDashboard";
+import useAdmin from "../Hooks/useAdmin";
 
 const Dashboard = () => {
-  const [isAdmin] = useAdmin();
+  const [, isAdmin] = useAdmin();
   const { user } = useAuth();
 
   return (
@@ -16,12 +16,36 @@ const Dashboard = () => {
           <ul className="menu  font-semibold uppercase space-y-4">
             {isAdmin ? (
               <>
+              <div>{user?.displayName} (Admin)</div>
+                <div className="divider"></div>
                 <div>
                   <NavLink
-                    to="/dashboard/"
-                    className={" font-semibold uppercase"}
+                    to="/dashboard/admin_users"
+                    className={({ isActive }) =>
+                      isActive ? "text-white bg-[#f6ab4a] p-1 rounded" : ""
+                    }
                   >
-                    AMin route added
+                    Users
+                  </NavLink>
+                </div>
+                <div>
+                  <NavLink
+                    to="/dashboard/allPets"
+                    className={({ isActive }) =>
+                      isActive ? "text-white bg-[#f6ab4a] p-1 rounded" : ""
+                    }
+                  >
+                    All Pets
+                  </NavLink>
+                </div>
+                <div>
+                  <NavLink
+                    to="/dashboard/allDonations"
+                    className={({ isActive }) =>
+                      isActive ? "text-white bg-[#f6ab4a] p-1 rounded" : ""
+                    }
+                  >
+                    All Donations
                   </NavLink>
                 </div>
               </>

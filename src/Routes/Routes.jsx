@@ -18,6 +18,9 @@ import PetUpdate from "../pages/Dashboard/PetUpate/PetUpdate";
 import CampaignEdit from "../pages/Dashboard/CampaignEdit/CampaignEdit";
 import DonationCampaigns from "../pages/DonationCampaigns/DonationCampaigns";
 import DonationCampDetails from "../pages/DonationCampaigns/DonationCampDetails";
+import Users from "../pages/Dashboard/Users/Users";
+import AdminRoute from "./AdminRoute";
+import AllPets from "../pages/Dashboard/AllPets/AllPets";
 
 export const router = createBrowserRouter([
   {
@@ -106,6 +109,16 @@ export const router = createBrowserRouter([
         path: "myDonations",
         element: <MyDonations />,
       },
+      // Admin Route
+      {
+        path:'admin_users',
+        element:<Users/>
+      },
+      {
+        path:'allPets',
+        element: <AllPets/>
+
+      }
     ],
   },
 ]);
