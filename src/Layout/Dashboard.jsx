@@ -12,7 +12,7 @@ const Dashboard = () => {
       <NavbarDashboard/>
       <div className="flex">
         {/* sidebar */}
-        <div className="w-56 min-h-screen border border-brown-600">
+        <div className="w-56 min-h-screen border-brown-600 border-8">
           <ul className="menu  font-medium capitalize space-y-4">
             {isAdmin[0] ? (
               <>

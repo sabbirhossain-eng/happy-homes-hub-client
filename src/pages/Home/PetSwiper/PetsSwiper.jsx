@@ -6,7 +6,7 @@ import "swiper/css/pagination";
 
 const PetsSwiper = () => {
   const imgStyle = {
-    width: "50%",
+    width: "30%",
     height: "30%",
     objectFit: "cover",
   };
