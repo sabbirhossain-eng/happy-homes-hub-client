@@ -13,7 +13,6 @@ import DonationModal from "./DonationModal";
 
 const DonationCampDetails = () => {
   const {
-    _id,
     image,
     name,
     lastDate,
@@ -21,7 +20,6 @@ const DonationCampDetails = () => {
     short_description,
     description,
     date,
-    donationAmount,
   } = useLoaderData();
 
   const [open, setOpen] = useState(false);
@@ -88,9 +86,6 @@ const DonationCampDetails = () => {
           >
             {description}
           </Typography>
-          <Typography variant="h4" color="blue-gray">
-            <DonationModal handleOpen={handleOpen} open={open}  amount={amount} donationAmount={donationAmount} id={_id}/>
-          </Typography>
         </CardBody>
         <CardFooter className="flex items-center justify-between">
           <div className="flex items-center -space-x-3">
@@ -103,6 +98,7 @@ const DonationCampDetails = () => {
               Donation Now !
             </Button>
           </div>
+          <DonationModal handleOpen={handleOpen} open={open}/>
         </CardFooter>
       </Card>
     </div>

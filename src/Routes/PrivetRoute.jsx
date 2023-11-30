@@ -1,13 +1,13 @@
 import { Navigate, useLocation } from "react-router-dom";
 import useAuth from "../Hooks/useAuth";
-
+import { Spinner } from "@material-tailwind/react";
 
 const PrivetRoute = ({children}) => {
     const {user, loading} = useAuth();
     const location = useLocation();
 
     if(loading){
-       return <progress className="progress w-56 flex justify-center items-center"></progress>
+       return <Spinner className="h-16 w-16" color="amber" />
     }
     if(user){
         return children

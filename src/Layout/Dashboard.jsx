@@ -4,7 +4,7 @@ import NavbarDashboard from "../pages/Shared/Navbar/NavbarDashboard";
 import useAdmin from "../Hooks/useAdmin";
 
 const Dashboard = () => {
-  const [, isAdmin] = useAdmin();
+  const isAdmin = useAdmin();
   const { user } = useAuth();
 
   return (
@@ -14,7 +14,7 @@ const Dashboard = () => {
         {/* sidebar */}
         <div className="w-56 min-h-screen bg-[#4e2c2c]  text-brown-50">
           <ul className="menu  font-semibold uppercase space-y-4">
-            {isAdmin ? (
+            {isAdmin[0] ? (
               <>
               <div>{user?.displayName} (Admin)</div>
                 <div className="divider"></div>

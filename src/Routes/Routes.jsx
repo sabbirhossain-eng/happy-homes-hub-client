@@ -11,7 +11,6 @@ import CreateDonationCampaign from "../pages/Dashboard/CreateDonationCampaign/Cr
 import MyDonationCampaigns from "../pages/Dashboard/MyDonationCampaigns/MyDonationCampaigns";
 import MyDonations from "../pages/Dashboard/MyDonations/MyDonations";
 import PetListing from "../pages/PetListing/PetListing";
-import ItemDetails from "../pages/ItemDetails/Itemdetails";
 import PrivetRoute from "./PrivetRoute";
 import ErrorElements from "../pages/ErrorPage/ErrorElement";
 import PetUpdate from "../pages/Dashboard/PetUpate/PetUpdate";
@@ -22,6 +21,7 @@ import Users from "../pages/Dashboard/Users/Users";
 import AdminRoute from "./AdminRoute";
 import AllPets from "../pages/Dashboard/AllPets/AllPets";
 import AllDonations from "../pages/Dashboard/AllDonations/AllDonations";
+import ItemDetails from "../pages/ItemDetails/ItemDetails";
 
 export const router = createBrowserRouter([
   {
@@ -45,7 +45,7 @@ export const router = createBrowserRouter([
           </PrivetRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/pets/${params.id}`),
+          fetch(`https://happy-homes-hub-server.vercel.app/pets/${params.id}`),
       },
       {
         path: "/donationCampaigns",
@@ -59,7 +59,7 @@ export const router = createBrowserRouter([
           </PrivetRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/donations/${params.id}`),
+          fetch(`https://happy-homes-hub-server.vercel.app/donations/${params.id}`),
       },
       {
         path: "/signUp",
@@ -92,7 +92,7 @@ export const router = createBrowserRouter([
         path: "petUpdate/:id",
         element: <PetUpdate />,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/pets/${params.id}`),
+          fetch(`https://happy-homes-hub-server.vercel.app/pets/${params.id}`),
       },
       {
         path: "adoptionReq",
@@ -110,7 +110,7 @@ export const router = createBrowserRouter([
         path: "campaignEdit/:id",
         element: <CampaignEdit />,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/donations/${params.id}`),
+          fetch(`https://happy-homes-hub-server.vercel.app/donations/${params.id}`),
       },
       {
         path: "myDonations",
@@ -120,9 +120,9 @@ export const router = createBrowserRouter([
       {
         path: "admin_users",
         element: (
-          <AdminRoute>
-            <Users />
-          </AdminRoute>
+            <AdminRoute>
+              <Users />
+            </AdminRoute>
         ),
       },
       {
