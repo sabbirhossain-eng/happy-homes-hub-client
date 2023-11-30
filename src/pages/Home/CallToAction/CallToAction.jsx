@@ -12,8 +12,8 @@ const CallToAction = () => {
 
   const handleOpen = (value) => setSize(value);
   return (
-    <div className="flex gap-4 mt-20">
-      <div className="flex-1">
+    <div className=" flex flex-col lg:flex-row gap-4 mt-20">
+      <div className="lg:flex-1">
         <h2 className="text-3xl font-medium">
           Take the Leap, Adopt a Pet Friend!
         </h2>
@@ -82,7 +82,7 @@ const CallToAction = () => {
           </Dialog>
         </p>
       </div>
-      <div className="flex-1">
+      <div className="lg:flex-1">
       <figure className="relative h-96 w-full">
       <img
         className="h-full w-full rounded-xl object-cover object-center"

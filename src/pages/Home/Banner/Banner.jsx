@@ -10,7 +10,7 @@ const Banner = () => {
         strength={-200}
       >
         <div
-          className="hero max-w-screen-2xl h-[500px] border-[#f6ab4a] border-t-8 border-b-8 "
+          className="hero lg:max-w-screen-2xl h-[500px] border-[#f6ab4a] border-t-8 border-b-8 "
         >
           <div className="hero-overlay bg-opacity-60"></div>
           <div className="hero-content text-center text-neutral-content">
