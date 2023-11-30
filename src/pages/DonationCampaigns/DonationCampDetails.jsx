@@ -10,6 +10,11 @@ import {
 
 import { useState } from "react";
 import DonationModal from "./DonationModal";
+import useAuth from "../../Hooks/useAuth";
+import { Elements } from "@stripe/react-stripe-js";
+import { loadStripe } from "@stripe/stripe-js";
+
+const stripePromise = loadStripe(import.meta.env.VITE_PUBLISHABLE_KEY);
 
 const DonationCampDetails = () => {
   const {
@@ -21,9 +26,9 @@ const DonationCampDetails = () => {
     description,
     date,
   } = useLoaderData();
-
+  const {user} = useAuth();
   const [open, setOpen] = useState(false);
-  const handleOpen = () => setOpen((cur) => !cur);
+  const handleOpen = () => setOpen(!open);
 
   const splitDate = (dateString) => {
     const [dateValue] = dateString.split("T");
@@ -32,6 +37,7 @@ const DonationCampDetails = () => {
 
   return (
     <div>
+      <Elements stripe={stripePromise}>
       <Card className=" w-full overflow-hidden">
         <CardHeader
           floated={false}
@@ -98,9 +104,10 @@ const DonationCampDetails = () => {
               Donation Now !
             </Button>
           </div>
-          <DonationModal handleOpen={handleOpen} open={open}/>
         </CardFooter>
+          <DonationModal handleOpen={handleOpen} open={open} user={user} amount={amount} image={image} name={name}/>
       </Card>
+      </Elements>
     </div>
   );
 };

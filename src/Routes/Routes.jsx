@@ -127,11 +127,15 @@ export const router = createBrowserRouter([
       },
       {
         path: "allPets",
-        element: <AllPets />,
+        element: <AdminRoute>
+          <AllPets />
+        </AdminRoute>,
       },
       {
         path: "allDonations",
-        element: <AllDonations />,
+        element: <AdminRoute>
+          <AllDonations />
+        </AdminRoute>,
       },
     ],
   },
