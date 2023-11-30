@@ -22,6 +22,10 @@ import AdminRoute from "./AdminRoute";
 import AllPets from "../pages/Dashboard/AllPets/AllPets";
 import AllDonations from "../pages/Dashboard/AllDonations/AllDonations";
 import ItemDetails from "../pages/ItemDetails/ItemDetails";
+import Cats from "../pages/CategoryPage/Cats";
+import Dogs from "../pages/CategoryPage/Dogs";
+import Rabbits from "../pages/CategoryPage/Rabbits";
+import Birds from "../pages/CategoryPage/Birds";
 
 export const router = createBrowserRouter([
   {
@@ -32,6 +36,22 @@ export const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: '/cats',
+        element: <Cats/>
+      },
+      {
+        path: '/dogs',
+        element: <Dogs/>
+      },
+      {
+        path: '/rabbits',
+        element: <Rabbits/>
+      },
+      {
+        path: '/birds',
+        element: <Birds/>
       },
       {
         path: "/petListing",

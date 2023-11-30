@@ -12,8 +12,8 @@ const Dashboard = () => {
       <NavbarDashboard/>
       <div className="flex">
         {/* sidebar */}
-        <div className="w-56 min-h-screen bg-[#4e2c2c]  text-brown-50">
-          <ul className="menu  font-semibold uppercase space-y-4">
+        <div className="w-56 min-h-screen border border-brown-600">
+          <ul className="menu  font-medium capitalize space-y-4">
             {isAdmin[0] ? (
               <>
               <div>{user?.displayName} (Admin)</div>

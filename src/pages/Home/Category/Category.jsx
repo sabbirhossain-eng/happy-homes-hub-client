@@ -4,6 +4,7 @@ import {
   CardBody,
   Typography,
 } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 
 const Category = () => {
   return (
@@ -11,6 +12,7 @@ const Category = () => {
     <div className="flex justify-center gap-4 -mt-28">
         {/* card-1 */}
       <div>
+      <Link to="/cats">
       <Card className="group w-64 h-96 relative overflow-hidden shadow-lg transition-transform transform hover:scale-105">
         <CardHeader floated={false} className="h-80">
           <img
@@ -25,9 +27,11 @@ const Category = () => {
           </Typography>
         </CardBody>
       </Card>
+      </Link>
       </div>
         {/* card-2 */}
       <div>
+      <Link to="/dogs">
       <Card className="group w-64 h-96 relative overflow-hidden shadow-lg transition-transform transform hover:scale-105">
         <CardHeader floated={false} className="h-80">
           <img
@@ -42,9 +46,11 @@ const Category = () => {
           </Typography>
         </CardBody>
       </Card>
+      </Link>
       </div>
         {/* card-3 */}
       <div>
+      <Link to="/rabbits">
       <Card className="group w-64 h-96 relative overflow-hidden shadow-lg transition-transform transform hover:scale-105">
         <CardHeader floated={false} className="h-80">
           <img
@@ -59,9 +65,11 @@ const Category = () => {
           </Typography>
         </CardBody>
       </Card>
+      </Link>
       </div>
         {/* card-4 */}
       <div>
+      <Link to="/birds">
       <Card className="group w-64 h-96 relative overflow-hidden shadow-lg transition-transform transform hover:scale-105">
         <CardHeader floated={false} className="h-80">
           <img
@@ -76,6 +84,7 @@ const Category = () => {
           </Typography>
         </CardBody>
       </Card>
+      </Link>
       </div>
     </div>
   );

@@ -28,7 +28,8 @@ const AdoptModal = ({ handleOpen, open }) => {
     const email = formData.get("email");
     const number = phone;
     const address = formData.get("address");
-    const adoptPet = { name, email, number, address };
+    const adoption = true;
+    const adoptPet = { name, email, number, address,adoption };
     console.log(name, email, number, address);
 
     const res = await axiosSecure.post('/adoptPets', adoptPet)
