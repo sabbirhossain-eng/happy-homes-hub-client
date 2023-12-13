@@ -12,7 +12,7 @@ const PetsSwiper = () => {
   };
 
   return (
-    <div className="mt-14 ">
+    <div className="mt-14 " data-aos="fade-up" data-aos-duration="3000">
       <Swiper
         effect={"coverflow"}
         grabCursor={true}

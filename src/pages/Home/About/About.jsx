@@ -3,7 +3,7 @@ import img from "../../../assets/About/image3.jpg";
 const About = () => {
   return (
     <div className="mt-20">
-      <h2 className="text-3xl font-semibold text-[#f6ab4a] text-center mb-4">
+      <h2 className="text-3xl font-semibold text-[#f6ab4a] text-center mb-4" data-aos="fade-up" data-aos-duration="3000">
         Welcome to Happy Homes Hub - Where Hearts and Homes Unite!
       </h2>
       <div>
@@ -17,7 +17,7 @@ const About = () => {
             <div className="hero-overlay bg-opacity-60"></div>
             <div className="hero-content text-center text-neutral-content py-20">
               <div className="max-w-3xl space-y-4">
-                <p className="mb-5 ">
+                <p className="mb-5 " data-aos="fade-up" data-aos-duration="3000">
                   Happy Homes Hub is a cutting-edge pet adoption platform
                   designed with a singular mission: to create joyous connections
                   between pets and their forever families. Our platform is
@@ -25,16 +25,16 @@ const About = () => {
                   an enriching and seamless experience for both adopters and
                   pets.
                 </p>
-                <h3>Why Happy Homes Hub:</h3>
+                <h3 data-aos="fade-up" data-aos-duration="3000">Why Happy Homes Hub:</h3>
 
-                <p>
+                <p data-aos="fade-up" data-aos-duration="3000">
                   <strong>Passion for Pet Welfare:</strong>
                   We are driven by a deep passion for animal welfare. Our
                   platform was born from the desire to make a positive impact on
                   the lives of both pets and adopters.
                 </p>
 
-                <p>
+                <p data-aos="fade-up" data-aos-duration="3000">
                   <strong>Innovation for Impact:</strong>
                   Happy Homes Hub leverages technology to bring innovation to
                   pet adoption. We believe that by embracing technology, we can
@@ -42,7 +42,7 @@ const About = () => {
                   happy homes for pets in need.
                 </p>
 
-                <p>
+                <p data-aos="fade-up" data-aos-duration="3000">
                   <strong>Community Building:</strong>
                   Beyond being a platform, Happy Homes Hub is a community. Join
                   a network of like-minded individuals who share a love for
@@ -50,7 +50,7 @@ const About = () => {
                   dedicated to creating happy homes.
                 </p>
 
-                <p>
+                <p data-aos="fade-up" data-aos-duration="3000">
                   Embark on your adoption journey with Happy Homes Hub, where
                   the perfect companionship is just a click away. Together,
                   lets make every home a happy home!

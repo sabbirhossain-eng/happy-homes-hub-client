@@ -29,7 +29,7 @@ const PetsGallery = () => {
   );
 
     return (
-        <div className="text-center flex-col items-center mt-10">
+        <div className="text-center flex-col items-center mt-10" data-aos="fade-up" data-aos-duration="3000">
           <div>
             <h2 className="text-3xl font-medium text-[#f6ab4a] mb-4">Pets Gallery</h2>
           </div>

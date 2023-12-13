@@ -14,20 +14,20 @@ const CallToAction = () => {
   return (
     <div className=" flex flex-col justify-center lg:flex-row gap-4 mt-20 mx-auto">
       <div className="lg:flex-1">
-        <h2 className="text-3xl font-medium">
+        <h2 className="text-3xl font-medium" data-aos="fade-up" data-aos-duration="3000">
           Take the Leap, Adopt a Pet Friend!
         </h2>
 
-        <p className="mt-2">
+        <p className="mt-2" data-aos="fade-up" data-aos-duration="3000">
           Are you ready to transform a life and open your heart to a furry
           companion? The journey of pet adoption is a heartwarming adventure
           waiting for you. Join us in making a difference and offering a forever
           home to an animal in need.
         </p>
 
-        <h2 className="text-3xl font-medium mt-10">Why Adopt?</h2>
+        <h2 className="text-3xl font-medium mt-10" data-aos="fade-up" data-aos-duration="3000">Why Adopt?</h2>
 
-        <p className="mt-2">
+        <p className="mt-2" data-aos="fade-up" data-aos-duration="3000">
           By choosing adoption, you are not just bringing home a pet; you are
           providing a second chance at happiness. Thousands of lovable dogs,
           cats, and other animals are eagerly waiting for someone like you to
@@ -89,6 +89,7 @@ const CallToAction = () => {
         className="h-full w-full rounded-xl object-cover object-center"
         src="https://i.ibb.co/n80YBRK/image.png"
         alt="nature image"
+        data-aos="fade-up" data-aos-duration="3000"
       />
       <figcaption className="absolute bottom-8 left-2/4 flex w-[calc(100%-4rem)] -translate-x-2/4 rounded-xl border border-white bg-[#4e2c2c] py-4 px-6 shadow-lg shadow-black/5 saturate-200 backdrop-blur-sm">
         <Typography variant="h5" color="white">

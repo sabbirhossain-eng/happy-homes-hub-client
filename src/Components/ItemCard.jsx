@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 const ItemCard = ({item}) => {
   return (
     <div>
-      <Card className="w-80">
+      <Card className="w-80" data-aos="fade-up" data-aos-duration="3000">
         <CardHeader floated={false} className="h-56">
           <img
             src={item.image}

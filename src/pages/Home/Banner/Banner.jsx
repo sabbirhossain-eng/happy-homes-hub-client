@@ -15,8 +15,8 @@ const Banner = () => {
           <div className="hero-overlay bg-opacity-60"></div>
           <div className="hero-content text-center text-neutral-content">
             <div className="max-w-lg">
-              <h1 className="mb-5 text-5xl font-bold uppercase">Happy Homes Hub</h1>
-              <p className="mb-5">
+              <h1 className="mb-5 text-5xl font-bold uppercase" data-aos="fade-up" data-aos-duration="3000">Happy Homes Hub</h1>
+              <p className="mb-5" data-aos="fade-up" data-aos-duration="3000">
               Pet adoption is the compassionate act of providing a home and care for an animal in need.
               </p>
             </div>

@@ -13,7 +13,7 @@ const Category = () => {
         {/* card-1 */}
       <div>
       <Link to="/cats">
-      <Card className="group w-64 h-96 relative overflow-hidden shadow-lg transition-transform transform hover:scale-105 mx-auto">
+      <Card className="group w-64 h-96 relative overflow-hidden shadow-lg transition-transform transform hover:scale-105 mx-auto" data-aos="fade-up" data-aos-duration="3000">
         <CardHeader floated={false} className="h-80">
           <img
             src="https://i.ibb.co/MpCqxzX/cats.png"
@@ -32,7 +32,7 @@ const Category = () => {
         {/* card-2 */}
       <div>
       <Link to="/dogs">
-      <Card className="group w-64 h-96 relative overflow-hidden shadow-lg transition-transform transform hover:scale-105 mx-auto">
+      <Card className="group w-64 h-96 relative overflow-hidden shadow-lg transition-transform transform hover:scale-105 mx-auto" data-aos="fade-up" data-aos-duration="3000">
         <CardHeader floated={false} className="h-80">
           <img
             src="https://i.ibb.co/WWcgPHs/dogs.png"
@@ -51,7 +51,7 @@ const Category = () => {
         {/* card-3 */}
       <div>
       <Link to="/rabbits">
-      <Card className="group w-64 h-96 relative overflow-hidden shadow-lg transition-transform transform hover:scale-105 mx-auto">
+      <Card className="group w-64 h-96 relative overflow-hidden shadow-lg transition-transform transform hover:scale-105 mx-auto" data-aos="fade-up" data-aos-duration="3000">
         <CardHeader floated={false} className="h-80">
           <img
             src="https://i.ibb.co/SXFZp0H/rabbit.png"
@@ -70,7 +70,7 @@ const Category = () => {
         {/* card-4 */}
       <div>
       <Link to="/birds">
-      <Card className="group w-64 h-96 relative overflow-hidden shadow-lg transition-transform transform hover:scale-105 mx-auto">
+      <Card className="group w-64 h-96 relative overflow-hidden shadow-lg transition-transform transform hover:scale-105 mx-auto" data-aos="fade-up" data-aos-duration="3000">
         <CardHeader floated={false} className="h-80">
           <img
             src="https://i.ibb.co/gwn9Shk/birds.png"
