@@ -38,7 +38,7 @@ const PetsGallery = () => {
       variant="quilted"
       cols={4}
       rowHeight={121}
-      className="items-center"
+      className="items-center w-[80%]"
     >
       {sortedItems.map((item) => (
         <ImageListItem key={item._id} cols={item.cols || 1} rows={item.rows || 1}>

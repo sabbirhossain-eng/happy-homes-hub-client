@@ -50,7 +50,7 @@ const CallToAction = () => {
             }
             size={size || "sm"}
             handler={handleOpen}
-            className="w-auto"
+            className="w-[60%]"
           >
             <DialogHeader>How to Adopt:</DialogHeader>
             <DialogBody>
