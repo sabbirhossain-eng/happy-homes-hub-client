@@ -5,9 +5,9 @@ import { Drawer, IconButton, Typography } from "@material-tailwind/react";
 
 const NavLogged = () => {
   const { user, logOut } = useAuth();
-  const [openRight, setOpenRight] = useState(false);
-  const openDrawerRight = () => setOpenRight(true);
-  const closeDrawerRight = () => setOpenRight(false);
+  const [openTop, setOpenTop] = useState(false);
+  const openDrawerTop = () => setOpenTop(true);
+  const closeDrawerTop = () => setOpenTop(false);
 
   const handleLogOut = () => {
     logOut().then().catch();
@@ -18,7 +18,7 @@ const NavLogged = () => {
       <div>
         {user ? (
           <div>
-            <div onClick={openDrawerRight}>
+            <div onClick={openDrawerTop}>
               {user?.photoURL ? (
                 <img
                   src={user.photoURL}
@@ -34,11 +34,11 @@ const NavLogged = () => {
               )}
             </div>
             <div>
-              {openRight && (
+              {openTop && (
                 <Drawer
                   placement="right"
-                  open={openRight}
-                  onClose={closeDrawerRight}
+                  open={openTop}
+                  onClose={closeDrawerTop}
                   className="p-4 mt-20 bg-[#4e2c2c] "
                 >
                   <div className="space-y-4">
@@ -47,7 +47,7 @@ const NavLogged = () => {
                       <IconButton
                         variant="text"
                         color="yellow"
-                        onClick={closeDrawerRight}
+                        onClick={closeDrawerTop}
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"

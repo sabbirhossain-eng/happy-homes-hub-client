@@ -12,7 +12,7 @@ const CallToAction = () => {
 
   const handleOpen = (value) => setSize(value);
   return (
-    <div className=" flex flex-col lg:flex-row gap-4 mt-20">
+    <div className=" flex flex-col justify-center lg:flex-row gap-4 mt-20 mx-auto">
       <div className="lg:flex-1">
         <h2 className="text-3xl font-medium">
           Take the Leap, Adopt a Pet Friend!
@@ -48,8 +48,9 @@ const CallToAction = () => {
               size === "xl" ||
               size === "xxl"
             }
-            size={size || "md"}
+            size={size || "sm"}
             handler={handleOpen}
+            className="w-auto"
           >
             <DialogHeader>How to Adopt:</DialogHeader>
             <DialogBody>

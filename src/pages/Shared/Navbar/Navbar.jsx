@@ -60,7 +60,7 @@ const NavBar = () => {
     </ul>
   );
   return (
-    <Navbar className=" z-10 rounded-none px-4 py-2 lg:px-8 lg:py-4 fixed mx-auto inset-x-0 max-w-screen-2xl ">
+    <Navbar className=" z-10 rounded-none px-4 py-2 lg:px-8 lg:py-4 fixed mx-auto inset-x-0 w-full ">
       <div className="flex items-center justify-between text-white ">
         <Typography
           as="a"
@@ -76,7 +76,7 @@ const NavBar = () => {
           </div>
           <IconButton
             variant="text"
-            className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+            className="ml-auto h-6 w-6 text-inherit text-[#f6ab4a] hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
             ripple={false}
             onClick={() => setOpenNav(!openNav)}
           >

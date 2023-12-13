@@ -10,12 +10,12 @@ const Banner = () => {
         strength={-200}
       >
         <div
-          className="hero lg:max-w-screen-2xl h-[500px] border-[#f6ab4a] border-t-8 border-b-8 "
+          className="hero w-auto h-[500px] border-[#f6ab4a] border-t-8 border-b-8 "
         >
           <div className="hero-overlay bg-opacity-60"></div>
           <div className="hero-content text-center text-neutral-content">
             <div className="max-w-lg">
-              <h1 className="mb-5 text-5xl font-bold uppercase">Happy Home Hub</h1>
+              <h1 className="mb-5 text-5xl font-bold uppercase">Happy Homes Hub</h1>
               <p className="mb-5">
               Pet adoption is the compassionate act of providing a home and care for an animal in need.
               </p>

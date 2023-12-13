@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const Category = () => {
   return (
     
-    <div className=" flex flex-col lg:flex-row lg:justify-center gap-4 lg:-mt-28">
+    <div className=" flex flex-col lg:flex-row lg:justify-center gap-4 lg:-mt-28 mx-auto">
         {/* card-1 */}
       <div>
       <Link to="/cats">
