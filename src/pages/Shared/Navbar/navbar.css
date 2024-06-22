@@ -5,7 +5,7 @@
     right: 0;
     height: 2px;
     width: 0;
-    background: #076aa5;
+    background: #63ac44;
     transition: width .3s ease-in-out;
     transform-origin: left;
 }
@@ -13,6 +13,6 @@
 
 .nav-link:hover::before {
     width: 100%;
-    background: #076aa5;
+    background: #63ac44;
 }
 

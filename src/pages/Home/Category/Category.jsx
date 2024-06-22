@@ -7,7 +7,7 @@ import dog from "../../../assets/Category/Dogs.png";
 
 const Category = () => {
   return (
-    <div className=" flex flex-col flex-col-2 lg:flex-row lg:justify-center gap-4 mx-auto">
+    <div className=" flex flex-col  lg:flex-row lg:justify-center gap-4 mx-auto my-10">
       {/* card-1 */}
       <div>
         <Link to="/cats">

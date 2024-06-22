@@ -155,7 +155,7 @@ const NavBar = () => {
                         className="mt-3 z-[9999] shadow dropdown-content px-8 py-8 text-xl bg-[#fafdf9] dark:bg-primary-dark rounded-box w-[250px] max-w-[300px] flex flex-col items-center justify-center gap-2"
                       >
                         <li className="flex items-center justify-center">
-                          <div className="w-20 flex items-center justify-center h-20 border-2 border-[#076aa5] hover:border-gray-800 rounded-full">
+                          <div className="w-20 flex items-center justify-center h-20 border-2 border-primary-light hover:border-gray-800 rounded-full">
                             <img
                               alt="user"
                               src={
@@ -171,8 +171,8 @@ const NavBar = () => {
                         <Link
                           className={` ${
                             pathname === "/dashboard"
-                              ? "text-[#076aa5] font-bold "
-                              : "dark:text-in-dark hover:text-[#076aa5] dark:hover:text-[#076aa5]  transition-all duration-300 ease-in-out"
+                              ? "text-primary-light font-bold "
+                              : "dark:text-in-dark hover:text-primary-light dark:hover:text-primary-light  transition-all duration-300 ease-in-out"
                           } no-underline font-semibold text-lg lg:hover:bg-none  lg:p-0 w-full inline-block rounded-[10px]`}
                           to={"/dashboard"}
                         >
@@ -181,8 +181,8 @@ const NavBar = () => {
                         <Link
                           className={` ${
                             pathname === "/profile"
-                              ? "text-[#076aa5] font-bold "
-                              : "dark:text-in-dark hover:text-[#076aa5] dark:hover:text-[#076aa5]  transition-all duration-300 ease-in-out"
+                              ? "text-primary-light font-bold "
+                              : "dark:text-in-dark hover:text-primary-light dark:hover:text-primary-light  transition-all duration-300 ease-in-out"
                           } no-underline font-semibold text-lg lg:hover:bg-none  lg:p-0 w-full inline-block rounded-[10px]`}
                           to={"/profile"}
                         >
@@ -191,9 +191,9 @@ const NavBar = () => {
 
                         <div className="h-[1px] bg-gray-400 w-full"></div>
                         <li onClick={handleLogOut} className="w-full">
-                          <a className=" flex items-center gap-2 dark:text-in-dark w-full text-lg font-medium cursor-pointer dark:hover:text-[#076aa5]  hover:text-[#076aa5] transition-all duration-300 ease-in-out">
+                          <a className=" flex items-center gap-2 dark:text-in-dark w-full text-lg font-medium cursor-pointer dark:hover:text-primary-light  hover:text-primary-light transition-all duration-300 ease-in-out">
                             Logout
-                            <span className="text-[#076aa5]">
+                            <span className="text-primary-light">
                               <RiLogoutBoxLine />
                             </span>
                           </a>
@@ -205,7 +205,7 @@ const NavBar = () => {
                   {!user && (
                     <Link
                       to="/login"
-                      className="px-7 py-3  border-2 border-[#076aa5] md:border-2 md:border-[#076aa5] lg:hover:border-[#1d1d1d] lg:hover:text-white lg:hover:border-none lg:border-none rounded-md text-sm md:text-lg lg:text-[16px] xl:text-lg hover:bg-[#076aa5] font-medium  md:bg-none lg:py-2 xl:py-3 text-gray-800 dark:hover:bg-white dark:hover:text-gray-800 hover:text-white dark:text-in-dark"
+                      className="px-7 py-3  border-2 border-primary-light md:border-2 md:border-primary-light lg:hover:border-[#1d1d1d] lg:hover:text-white lg:hover:border-none lg:border-none rounded-md text-sm md:text-lg lg:text-[16px] xl:text-lg hover:bg-primary-light font-medium  md:bg-none lg:py-2 xl:py-3 text-gray-800 dark:hover:bg-white dark:hover:text-gray-800 hover:text-white dark:text-in-dark"
                     >
                       Login/Register
                     </Link>
@@ -306,7 +306,7 @@ const NavBar = () => {
                       className="mt-3 z-[9999] shadow dropdown-content px-8 py-8 text-xl bg-[#fafdf9] dark:bg-primary-dark rounded-box w-[250px] max-w-[300px] flex flex-col items-center justify-center gap-2"
                     >
                       <li className="flex items-center justify-center">
-                        <div className="w-20 flex items-center justify-center h-20 border-2 border-[#076aa5] hover:border-gray-800 rounded-full">
+                        <div className="w-20 flex items-center justify-center h-20 border-2 border-primary-light hover:border-gray-800 rounded-full">
                           <img
                             alt="user"
                             src={
@@ -322,8 +322,8 @@ const NavBar = () => {
                       <Link
                         className={` ${
                           pathname === "/dashboard"
-                            ? "text-[#076aa5] font-bold "
-                            : "dark:text-in-dark hover:text-[#076aa5] dark:hover:text-[#076aa5]  transition-all duration-300 ease-in-out"
+                            ? "text-primary-light font-bold "
+                            : "dark:text-in-dark hover:text-primary-light dark:hover:text-primary-light  transition-all duration-300 ease-in-out"
                         } no-underline font-semibold text-lg lg:hover:bg-none  lg:p-0 w-full inline-block rounded-[10px]`}
                         to={"/dashboard"}
                       >
@@ -332,8 +332,8 @@ const NavBar = () => {
                       <Link
                         className={` ${
                           pathname === "/profile"
-                            ? "text-[#076aa5] font-bold "
-                            : "dark:text-in-dark hover:text-[#076aa5] dark:hover:text-[#076aa5]  transition-all duration-300 ease-in-out"
+                            ? "text-primary-light font-bold "
+                            : "dark:text-in-dark hover:text-primary-light dark:hover:text-primary-light  transition-all duration-300 ease-in-out"
                         } no-underline font-semibold text-lg lg:hover:bg-none  lg:p-0 w-full inline-block rounded-[10px]`}
                         to={"/profile"}
                       >
@@ -342,9 +342,9 @@ const NavBar = () => {
 
                       <div className="h-[1px] bg-gray-400 w-full"></div>
                       <li onClick={handleLogOut} className="w-full">
-                        <a className=" flex items-center gap-2 dark:text-in-dark w-full text-lg font-medium cursor-pointer dark:hover:text-[#076aa5]  hover:text-[#076aa5] transition-all duration-300 ease-in-out">
+                        <a className=" flex items-center gap-2 dark:text-in-dark w-full text-lg font-medium cursor-pointer dark:hover:text-primary-light  hover:text-primary-light transition-all duration-300 ease-in-out">
                           Logout
-                          <span className="text-[#076aa5]">
+                          <span className="text-primary-light">
                             <RiLogoutBoxLine />
                           </span>
                         </a>
@@ -356,7 +356,7 @@ const NavBar = () => {
                 {!user && (
                   <Link
                     to="/login"
-                    className="px-7 py-3  border-2 border-[#076aa5] md:border-2 md:border-[#076aa5] lg:hover:border-[#1d1d1d] lg:hover:text-white lg:hover:border-none lg:border-none rounded-md text-sm md:text-lg lg:text-[16px] xl:text-lg hover:bg-[#076aa5] font-medium  md:bg-none lg:py-2 xl:py-3 text-gray-800 dark:hover:bg-white dark:hover:text-gray-800 hover:text-white dark:text-in-dark"
+                    className="px-7 py-3  border-2 border-primary-light md:border-2 md:border-primary-light lg:hover:border-[#1d1d1d] lg:hover:text-white lg:hover:border-none lg:border-none rounded-md text-sm md:text-lg lg:text-[16px] xl:text-lg hover:bg-primary-light font-medium  md:bg-none lg:py-2 xl:py-3 text-gray-800 dark:hover:bg-white dark:hover:text-gray-800 hover:text-white dark:text-in-dark"
                   >
                     Login/Register
                   </Link>

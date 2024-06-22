@@ -4,7 +4,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { useRef } from 'react';
-
+import  './Banner.css';
 import cat from '../../../assets/Banner/cat.jpg'
 import birds from '../../../assets/Banner/Bird.jpg'
 import rabbit from '../../../assets/Banner/Rabbit.jpg'
@@ -54,6 +54,7 @@ const Banner = () => {
           <span ref={progressContent}></span>
         </div>
       </Swiper>
+      <hr className='bg-secondary-light py-1' />
         </div>
     );
 };
