@@ -1,90 +1,64 @@
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  Typography,
-} from "@material-tailwind/react";
 import { Link } from "react-router-dom";
+
+import cat from "../../../assets/Category/Cats.png";
+import bird from "../../../assets/Category/Birds.png";
+import rabbit from "../../../assets/Category/Rabbits.png";
+import dog from "../../../assets/Category/Dogs.png";
 
 const Category = () => {
   return (
-    
-    <div className=" flex flex-col lg:flex-row lg:justify-center gap-4 lg:-mt-28 mx-auto">
-        {/* card-1 */}
+    <div className=" flex flex-col flex-col-2 lg:flex-row lg:justify-center gap-4 mx-auto">
+      {/* card-1 */}
       <div>
-      <Link to="/cats">
-      <Card className="group w-64 h-96 relative overflow-hidden shadow-lg transition-transform transform hover:scale-105 mx-auto" data-aos="fade-up" data-aos-duration="3000">
-        <CardHeader floated={false} className="h-80">
-          <img
-            src="https://i.ibb.co/MpCqxzX/cats.png"
-            alt="profile-picture"
-            className="object-cover transition-all group-hover:brightness-75"
-          />
-        </CardHeader>
-        <CardBody className="text-center">
-          <Typography variant="h4" color="blue-gray" className="mb-2">
-            Cats
-          </Typography>
-        </CardBody>
-      </Card>
-      </Link>
+        <Link to="/cats">
+          <div
+            className="card bg-white shadow-lg py-10 px-5 items-center hover:bg-primary-light dark:hover:hover:bg-primary-light text-gray-800 hover:text-white dark:text-in-dark dark:bg-card-dark"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
+            <img className="w-40" src={cat} alt="cats" />
+            <p className="text-xl font-bold mt-4">Cats</p>
+          </div>
+        </Link>
       </div>
-        {/* card-2 */}
+      {/* card-2 */}
       <div>
-      <Link to="/dogs">
-      <Card className="group w-64 h-96 relative overflow-hidden shadow-lg transition-transform transform hover:scale-105 mx-auto" data-aos="fade-up" data-aos-duration="3000">
-        <CardHeader floated={false} className="h-80">
-          <img
-            src="https://i.ibb.co/WWcgPHs/dogs.png"
-            alt="profile-picture"
-            className=" object-cover transition-all group-hover:brightness-75"
-          />
-        </CardHeader>
-        <CardBody className="text-center">
-          <Typography variant="h4" color="blue-gray" className="mb-2">
-            Dogs
-          </Typography>
-        </CardBody>
-      </Card>
-      </Link>
+        <Link to="/dogs">
+          <div
+            className="card bg-white shadow-lg py-10 px-5 items-center hover:bg-primary-light dark:hover:hover:bg-primary-light text-gray-800 hover:text-white dark:text-in-dark dark:bg-card-dark "
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
+            <img className="w-40" src={bird} alt="birds" />
+            <p className="text-xl font-bold mt-4">Birds</p>
+          </div>
+        </Link>
       </div>
-        {/* card-3 */}
+      {/* card-3 */}
       <div>
-      <Link to="/rabbits">
-      <Card className="group w-64 h-96 relative overflow-hidden shadow-lg transition-transform transform hover:scale-105 mx-auto" data-aos="fade-up" data-aos-duration="3000">
-        <CardHeader floated={false} className="h-80">
-          <img
-            src="https://i.ibb.co/SXFZp0H/rabbit.png"
-            alt="profile-picture"
-            className=" object-cover transition-all group-hover:brightness-75"
-          />
-        </CardHeader>
-        <CardBody className="text-center">
-          <Typography variant="h4" color="blue-gray" className="mb-2">
-            Rabbits
-          </Typography>
-        </CardBody>
-      </Card>
-      </Link>
+        <Link to="/rabbits">
+          <div
+            className="card bg-white shadow-lg py-10 px-5 items-center hover:bg-primary-light dark:hover:hover:bg-primary-light text-gray-800 hover:text-white dark:text-in-dark dark:bg-card-dark"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
+            <img className="w-40" src={rabbit} alt="rabbits" />
+            <p className="text-xl font-bold mt-4">Rabbits</p>
+          </div>
+        </Link>
       </div>
-        {/* card-4 */}
+      {/* card-4 */}
       <div>
-      <Link to="/birds">
-      <Card className="group w-64 h-96 relative overflow-hidden shadow-lg transition-transform transform hover:scale-105 mx-auto" data-aos="fade-up" data-aos-duration="3000">
-        <CardHeader floated={false} className="h-80">
-          <img
-            src="https://i.ibb.co/gwn9Shk/birds.png"
-            alt="profile-picture"
-            className="object-cover transition-all group-hover:brightness-75"
-          />
-        </CardHeader>
-        <CardBody className="text-center">
-          <Typography variant="h4" color="blue-gray" className="mb-2">
-            Birds
-          </Typography>
-        </CardBody>
-      </Card>
-      </Link>
+        <Link to="/birds">
+          <div
+            className="card bg-white shadow-lg py-10 px-5 items-center hover:bg-primary-light dark:hover:hover:bg-primary-light text-gray-800 hover:text-white dark:text-in-dark dark:bg-card-dark"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
+            <img className="w-40" src={dog} alt="dogs" />
+            <p className="text-xl font-bold mt-4">Dogs</p>
+          </div>
+        </Link>
       </div>
     </div>
   );
