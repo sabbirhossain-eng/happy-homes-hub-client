@@ -1,28 +1,60 @@
-import { Parallax } from "react-parallax";
-import img from '../../../assets/Banner/image2.jpg'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { useRef } from 'react';
+
+import cat from '../../../assets/Banner/cat.jpg'
+import birds from '../../../assets/Banner/Bird.jpg'
+import rabbit from '../../../assets/Banner/Rabbit.jpg'
+import dog from '../../../assets/Banner/dog.jpg'
 
 const Banner = () => {
+  const progressCircle = useRef(null);
+  const progressContent = useRef(null);
+  const onAutoplayTimeLeft = (s, time, progress) => {
+    progressCircle.current.style.setProperty('--progress', 1 - progress);
+    progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
+  };
     return (
-        <Parallax
-        blur={{ min: -15, max: 15 }}
-        bgImage={img}
-        bgImageAlt="the Cat"
-        strength={-200}
+        <div className=''>
+           <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        onAutoplayTimeLeft={onAutoplayTimeLeft}
+        className="mySwiper"
       >
-        <div
-          className="hero w-auto h-[500px] border-[#f6ab4a] border-t-8 border-b-8 "
-        >
-          <div className="hero-overlay bg-opacity-60"></div>
-          <div className="hero-content text-center text-neutral-content">
-            <div className="max-w-lg">
-              <h1 className="mb-5 text-5xl font-bold uppercase" data-aos="fade-up" data-aos-duration="3000">Happy Homes Hub</h1>
-              <p className="mb-5" data-aos="fade-up" data-aos-duration="3000">
-              Pet adoption is the compassionate act of providing a home and care for an animal in need.
-              </p>
-            </div>
-          </div>
+        <SwiperSlide>
+          <img src={cat} alt="" className='w-full h-screen relative' />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={birds} alt="" className='w-full h-screen relative'/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={rabbit} alt="" className='w-full h-screen relative' />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={dog} alt="" className='w-full h-screen relative'/>
+        </SwiperSlide>
+        
+        <div className="autoplay-progress w-10 absolute bottom-0 right-0 text-primary-light" slot="container-end">
+          <svg viewBox="0 0 48 48" ref={progressCircle} >
+            <circle  cx="24" cy="24" r="20"></circle>
+          </svg>
+          <span ref={progressContent}></span>
         </div>
-      </Parallax>
+      </Swiper>
+        </div>
     );
 };
 
