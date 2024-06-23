@@ -3,7 +3,7 @@ import img from "../../../assets/About/image3.jpg";
 const About = () => {
   return (
     <div className="mt-20">
-      <h2 className="text-3xl font-semibold text-[#f6ab4a] text-center mb-4" data-aos="fade-up" data-aos-duration="3000">
+      <h2 className="text-3xl font-semibold text-primary-light text-center mb-4" data-aos="fade-up" data-aos-duration="3000">
         Welcome to Happy Homes Hub - Where Hearts and Homes Unite!
       </h2>
       <div>

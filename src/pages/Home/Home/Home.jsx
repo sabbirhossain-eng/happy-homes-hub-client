@@ -3,7 +3,6 @@ import About from "../About/About";
 import Banner from "../Banner/Banner";
 import CallToAction from "../CallToAction/CallToAction";
 import Category from "../Category/Category";
-import PetsSwiper from "../PetSwiper/PetsSwiper";
 import CountUpStat from "../CountUp/CountUpStat";
 
 const Home = () => {
@@ -17,7 +16,6 @@ const Home = () => {
       <CountUpStat/>
       <CallToAction />
       <About />
-      <PetsSwiper />
     </div>
   );
 };
