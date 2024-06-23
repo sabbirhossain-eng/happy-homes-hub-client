@@ -5,13 +5,13 @@ import {
   DialogFooter,
 } from "@material-tailwind/react";
 import { useState } from "react";
-
+import catChild from "../../../assets/CallToAction/Cats childs.jpg"
 const CallToAction = () => {
   const [size, setSize] = useState(null);
 
   const handleOpen = (value) => setSize(value);
   return (
-    <div className=" flex flex-col justify-center lg:flex-row gap-4 mt-20 mx-auto px-4 lg:px-8">
+    <div className=" flex flex-col justify-center lg:flex-row gap-4 mt-20 mx-auto px-4 lg:px-8 dark:text-in-dark">
       <div className="lg:flex-1">
         <h2 className="text-3xl font-medium" data-aos="fade-up" data-aos-duration="3000">
           Take the Leap, Adopt a Pet Friend!
@@ -86,7 +86,7 @@ const CallToAction = () => {
       <figure className="relative h-96 w-full">
       <img
         className="h-full w-full rounded-xl object-cover object-center"
-        src="https://i.ibb.co/n80YBRK/image.png"
+        src={catChild}
         alt="nature image"
         data-aos="fade-up" data-aos-duration="3000"
       />
