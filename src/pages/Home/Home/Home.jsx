@@ -4,7 +4,7 @@ import Banner from "../Banner/Banner";
 import CallToAction from "../CallToAction/CallToAction";
 import Category from "../Category/Category";
 import PetsSwiper from "../PetSwiper/PetsSwiper";
-import PetsGallery from "../PetsGallery/PetsGallery";
+import CountUpStat from "../CountUp/CountUpStat";
 
 const Home = () => {
   return (
@@ -14,8 +14,8 @@ const Home = () => {
       </Helmet>
       <Banner />
       <Category />
+      <CountUpStat/>
       <CallToAction />
-      <PetsGallery />
       <About />
       <PetsSwiper />
     </div>

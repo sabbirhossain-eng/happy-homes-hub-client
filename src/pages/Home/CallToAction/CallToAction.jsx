@@ -3,7 +3,6 @@ import {
   DialogHeader,
   DialogBody,
   DialogFooter,
-  Typography,
 } from "@material-tailwind/react";
 import { useState } from "react";
 
@@ -12,7 +11,7 @@ const CallToAction = () => {
 
   const handleOpen = (value) => setSize(value);
   return (
-    <div className=" flex flex-col justify-center lg:flex-row gap-4 mt-20 mx-auto">
+    <div className=" flex flex-col justify-center lg:flex-row gap-4 mt-20 mx-auto px-4 lg:px-8">
       <div className="lg:flex-1">
         <h2 className="text-3xl font-medium" data-aos="fade-up" data-aos-duration="3000">
           Take the Leap, Adopt a Pet Friend!
@@ -35,7 +34,7 @@ const CallToAction = () => {
           each with a unique story longing for a happy ending
           <button
             onClick={() => handleOpen("lg")}
-            className=" ml-2 text-[#f6ab4a]"
+            className=" ml-2 text-primary-light"
           >
             Read More
           </button>
@@ -91,11 +90,6 @@ const CallToAction = () => {
         alt="nature image"
         data-aos="fade-up" data-aos-duration="3000"
       />
-      <figcaption className="absolute bottom-8 left-2/4 flex w-[calc(100%-4rem)] -translate-x-2/4 rounded-xl border border-white bg-[#4e2c2c] py-4 px-6 shadow-lg shadow-black/5 saturate-200 backdrop-blur-sm">
-        <Typography variant="h5" color="white">
-        Ready to Change a Life? Start Your Adoption Journey Today!
-        </Typography>
-      </figcaption>
     </figure>
       </div>
     </div>
