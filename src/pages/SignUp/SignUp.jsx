@@ -8,6 +8,7 @@ import toast from "react-hot-toast";
 import useImageHost from "../../Hooks/useImageHost";
 import { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import signUp from '../../assets/LoginSignUp/Sign up.png';
 
 const SignUp = () => {
   const axiosPublic = useAxiosPublic();
@@ -67,10 +68,10 @@ const SignUp = () => {
           <div className="text-center md:w-1/2">
             <h1 className="text-5xl font-bold">Sign Up</h1>
             <div className="py-6">
-              <img src="https://i.ibb.co/1Q1Mh8v/Sign-up-ds.png" alt="" />
+              <img src={signUp} alt="signUp" />
             </div>
           </div>
-          <div className="card flex-shrink-0 w-full md:w-1/2 max-w-sm shadow-2xl bg-base-200">
+          <div className="card flex-shrink-0 w-full md:w-1/2 max-w-sm shadow-xl bg-green-100">
             <form onSubmit={handleSubmit(onSubmit)} className="card-body">
               <div className="form-control">
                 <label className="label">
@@ -155,7 +156,7 @@ const SignUp = () => {
                 <input
                   {...register("image", { required: true })}
                   type="file"
-                  className="file-input  file-input-bordered file-input-warning w-full max-w-xs"
+                  className="file-input  file-input-bordered file:border-primary-light file:bg-primary-light w-full max-w-xs file:text-black"
                 />
                  {errors.image && (
                   <span className="text-red-500">Image is required</span>
@@ -163,7 +164,7 @@ const SignUp = () => {
               </div>
               <div className="form-control mt-2">
                 <input
-                  className="btn bg-[#f6ab4a]"
+                  className="btn bg-primary-light"
                   type="submit"
                   value="Sign Up"
                 />
@@ -172,7 +173,7 @@ const SignUp = () => {
                 <SocialLogin />
                 <small>
                   Already registered ?{" "}
-                  <Link to="/login" className="text-[#f6ab4a]">
+                  <Link to="/login" className="text-primary-light">
                     go to login
                   </Link>
                 </small>

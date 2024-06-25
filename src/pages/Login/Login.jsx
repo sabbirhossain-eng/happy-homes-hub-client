@@ -6,6 +6,7 @@ import useAuth from "../../Hooks/useAuth";
 import toast from "react-hot-toast";
 import { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import login from "../../assets/LoginSignUp/Login.png";
 
 const Login = () => {
     const [showPassword, setShowPassword] = useState(false);
@@ -46,10 +47,10 @@ const Login = () => {
           <div className="text-center md:w-1/2">
             <h1 className="text-5xl font-bold">Login</h1>
             <div className="py-6">
-             <img src="https://i.ibb.co/3zw30rV/Login-pana.png" alt="" />
+             <img src={login} alt="login" />
             </div>
           </div>
-          <div className="card flex-shrink-0 w-full md:w-1/2 max-w-sm shadow-2xl bg-base-200">
+          <div className="card flex-shrink-0 w-full md:w-1/2 max-w-sm shadow-xl bg-green-100">
             <form onSubmit={handleLogin} className="card-body">
               <div className="form-control">
                 <label className="label">
@@ -89,7 +90,7 @@ const Login = () => {
               <div className="form-control mt-6">
                 <input
                   
-                  className="btn bg-[#f6ab4a]"
+                  className="btn bg-primary-light"
                   type="submit"
                   value="Sign In"
                 />
@@ -98,7 +99,7 @@ const Login = () => {
                 <SocialLogin/>
                 <small>
                   New here?{" "}
-                  <Link to="/signUp" className="text-[#f6ab4a]">
+                  <Link to="/signUp" className="text-primary-light">
                     Create a New Account
                   </Link>
                 </small>
