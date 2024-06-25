@@ -4,6 +4,7 @@ import Banner from "../Banner/Banner";
 import CallToAction from "../CallToAction/CallToAction";
 import Category from "../Category/Category";
 import CountUpStat from "../CountUp/CountUpStat";
+import ContactUs from "../../ContactUs/ContactUs";
 
 const Home = () => {
   return (
@@ -16,6 +17,9 @@ const Home = () => {
       <CountUpStat/>
       <CallToAction />
       <About />
+      <div id="contactUs">
+      <ContactUs/>
+      </div>
     </div>
   );
 };

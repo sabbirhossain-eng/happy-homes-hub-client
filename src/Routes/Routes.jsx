@@ -26,6 +26,7 @@ import Cats from "../pages/CategoryPage/Cats";
 import Dogs from "../pages/CategoryPage/Dogs";
 import Rabbits from "../pages/CategoryPage/Rabbits";
 import Birds from "../pages/CategoryPage/Birds";
+import ContactUs from "../pages/ContactUs/ContactUs";
 
 export const router = createBrowserRouter([
   {
@@ -56,6 +57,10 @@ export const router = createBrowserRouter([
       {
         path: "/petListing",
         element: <PetListing />,
+      },
+      {
+        path: "/contactUs",
+        element: <ContactUs/>
       },
       {
         path: "/details/:id",

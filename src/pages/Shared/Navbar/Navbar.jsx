@@ -11,6 +11,7 @@ import useAuth from "../../../Hooks/useAuth";
 import useTheme from "../../../Provider/ThemeContext";
 import { RiLogoutBoxLine } from "react-icons/ri";
 import { useEffect, useState } from "react";
+import { HashLink } from "react-router-hash-link";
 const NavBar = () => {
   const { pathname } = useLocation();
   const navigate = useNavigate();
@@ -40,10 +41,18 @@ const NavBar = () => {
     );
   }, []);
 
+  // reset
+
+  const handleClick = () => {
+    
+    window.location.reset(true);
+  };
+
   const navList = (
     <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       <Typography className="nav-link relative">
         <Link
+         onClick={handleClick}
           className={` ${
             pathname === "/" ? "text-primary-light font-bold" : "text-gray-700 dark:text-gray-200"
           } no-underline font-semibold text-lg  lg:hover:bg-none text-gray-800 dark:hover:text-white p-4 lg:p-0 inline-block rounded-[10px] w-full`}
@@ -79,11 +88,13 @@ const NavBar = () => {
       <Typography className="nav-link relative">
         <Link
           className={` ${
-            pathname === "/" ? "text-primary-light font-bold" : "text-gray-700 dark:text-gray-200"
+            pathname === "/contactUs" ? "text-primary-light font-bold" : "text-gray-700 dark:text-gray-200"
           } no-underline font-semibold text-lg  lg:hover:bg-none text-gray-800  dark:hover:text-white p-4 lg:p-0 inline-block rounded-[10px] w-full`}
-          to={"/contactUs"}
+          
         >
+          <HashLink smooth to="/#contactUs">
           Contact Us
+          </HashLink>
         </Link>
       </Typography>
     </ul>
@@ -93,6 +104,7 @@ const NavBar = () => {
         <Navbar className="fixed z-10 max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4 bg-white dark:bg-primary-dark mx-auto">
           <div className="flex items-center justify-between text-nowrap">
             <Typography
+             onClick={handleClick}
               as="a"
               href="#"
               className="mr-4 cursor-pointer py-1.5 flex-1"
