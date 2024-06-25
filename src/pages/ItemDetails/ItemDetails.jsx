@@ -23,7 +23,7 @@ const ItemDetails = () => {
 
   return (
     <div>
-      <Card className="w-auto">
+      <Card className="w-full lg:w-[60%] mx-auto dark:bg-card-dark dark:text-in-dark">
         <CardHeader shadow={false} floated={false} className="h-96">
           <img
             src={image}
@@ -33,21 +33,21 @@ const ItemDetails = () => {
         </CardHeader>
         <CardBody>
           <div className="mb-2 flex items-center justify-between">
-            <Typography color="blue-gray" className="font-semibold">
+            <Typography  className="font-semibold text-2xl text-primary-light">
               {name}
             </Typography>
-            <Typography color="blue-gray" className="font-medium">
+            <Typography  className="font-medium">
               Age: {age} years
             </Typography>
-            <Typography color="blue-gray" className="font-medium capitalize">
+            <Typography  className="font-medium capitalize">
               Category: {category}
             </Typography>
           </div>
           <div className="mt-2 mb-4 flex items-center justify-between">
-            <Typography color="blue-gray" className="font-medium">
+            <Typography  className="font-medium">
               Location: {location}
             </Typography>
-            <Typography color="blue-gray" className="font-medium capitalize">
+            <Typography  className="font-medium capitalize">
               Date: {splitDate(date)}
             </Typography>
           </div>
@@ -58,10 +58,10 @@ const ItemDetails = () => {
           >
             Owner Note: {note}
           </Typography>
-          <hr className="my-4 bg-[#f6ab4a] p-[1px]" />
+          <hr className="my-4 bg-primary-light p-[1px]" />
           <Typography
-            color="blue-gray"
-            className="font-semibold text-center text-3xl mb-2"
+            
+            className="font-semibold text-center text-3xl mb-2 text-primary-light"
           >
             {name} Details
           </Typography>
@@ -78,7 +78,7 @@ const ItemDetails = () => {
             onClick={handleOpen}
             ripple={false}
             fullWidth={true}
-            className="bg-[#f6ab4a] text-white shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
+            className="bg-primary-light text-black shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
           >
             Adopt Now !
           </Button>

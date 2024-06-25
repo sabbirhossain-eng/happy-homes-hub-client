@@ -44,7 +44,7 @@ const PetListing = () => {
       <Helmet>
         <title>Happy Homes | Pet Listing</title>
       </Helmet>
-      <div className="flex justify-center items-center gap-2">
+      <div className="flex justify-center items-center gap-2 mt-2">
         <div>
           <input
             type="text"
