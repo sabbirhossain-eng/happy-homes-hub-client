@@ -3,7 +3,7 @@ import useAuth from "../Hooks/useAuth";
 import useAdmin from "../Hooks/useAdmin";
 import { IoPersonCircle } from "react-icons/io5";
 import { IoMdAddCircle } from "react-icons/io";
-import { MdPets } from "react-icons/md";
+import { MdHome, MdPets } from "react-icons/md";
 import { IoNotificationsCircle } from "react-icons/io5";
 import { IoIosCreate } from "react-icons/io";
 import { RiAdvertisementFill } from "react-icons/ri";
@@ -161,9 +161,23 @@ const Dashboard = () => {
               </>
             )}
           </ul>
+          <hr className="p-[1px] bg-primary-light" />
+          <div className=" flex justify-start mt-10">
+                  <div className="flex items-center">
+                    <MdHome className="text-xl text-primary-light mr-2" />
+                    <NavLink
+                      to="/"
+                      className={({ isActive }) =>
+                        isActive ? "text-primary-light  p-1 rounded" : ""
+                      }
+                    >
+                      Home
+                    </NavLink>
+                  </div>
+                </div>
         </div>
         {/* dashboard content */}
-        <div className="flex-1 p-8 pt-24 min-h-[calc(100vh-68px)]">
+        <div className="flex-1 p-8 pt-10 min-h-[calc(100vh-68px)]">
           <Outlet></Outlet>
         </div>
       </div>

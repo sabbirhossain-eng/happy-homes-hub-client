@@ -5,7 +5,7 @@ const ErrorElements = () => {
   const navigate = useNavigate()
 
   return (
-    <section className='bg-brown-50 '>
+    <section className='bg-green-100 '>
       <div className='container flex items-center min-h-screen px-6 py-12 mx-auto'>
         <div className='flex flex-col items-center max-w-sm mx-auto text-center'>
           <p>
@@ -19,7 +19,7 @@ const ErrorElements = () => {
           <div className='flex items-center w-full mt-6 gap-x-3 shrink-0 sm:w-auto'>
             <button
               onClick={() => navigate(-1)}
-              className='flex items-center justify-center w-1/2 px-5 py-1 text-sm text-white transition-colors duration-200 bg-[#f6ab4a] hover:text-black border rounded-lg gap-x-2 sm:w-auto   hover:bg-gray-100 '
+              className='flex items-center justify-center w-1/2 px-5 py-1 text-sm text-white transition-colors duration-200 bg-primary-light hover:text-black border rounded-lg gap-x-2 sm:w-auto   hover:bg-gray-100 '
             >
               <svg
                 xmlns='http://www.w3.org/2000/svg'
@@ -40,7 +40,7 @@ const ErrorElements = () => {
             </button>
 
             <button onClick={() => navigate('/')}
-            className='px-5 py-1 text-sm text-white transition-colors duration-200 bg-[#f6ab4a] hover:text-black border rounded-lg sm:w-auto   hover:bg-gray-100'
+            className='px-5 py-1 text-sm text-white transition-colors duration-200 bg-primary-light hover:text-black border rounded-lg sm:w-auto   hover:bg-gray-100'
             >
                 Go to Home
             </button>
