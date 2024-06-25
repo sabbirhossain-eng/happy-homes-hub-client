@@ -19,11 +19,22 @@ const Dashboard = () => {
     <div>
       <div className="flex">
         {/* sidebar */}
-        <div className="w-56 pt-24 min-h-screen border-primary-light border-r-4">
+        <div className="w-60 pt-10 min-h-screen border-primary-light border-r-4">
           <ul className="menu  font-medium capitalize space-y-4">
             {isAdmin[0] ? (
               <>
-                <div className=" flex justify-start">
+                <div className=" flex flex-col justify-start">
+                  <div>
+                  <img
+          className="mx-auto rounded-full h-36 w-36 mb-5"
+          src={
+            user?.photoURL
+              ? user?.photoURL
+              : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGf_8UZ3xLijdkOtv3qWnUpyknARbKMrcVJA&usqp=CAU"
+          }
+          alt="author avatar"
+        />
+                  </div>
                   <div className="flex items-center">
                   <MdAdminPanelSettings className="text-xl text-primary-light mr-2" />
                   {user?.displayName} (Admin)
@@ -72,7 +83,18 @@ const Dashboard = () => {
               </>
             ) : (
               <>
-                <div className=" flex justify-start">
+                <div className=" flex flex-col justify-start">
+                <div>
+                  <img
+          className="mx-auto rounded-full h-36 w-36 mb-5"
+          src={
+            user?.photoURL
+              ? user?.photoURL
+              : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGf_8UZ3xLijdkOtv3qWnUpyknARbKMrcVJA&usqp=CAU"
+          }
+          alt="author avatar"
+        />
+                  </div>
                   <div className="flex items-center">
                   <IoPersonCircle className="text-xl text-primary-light mr-2" />
                   {" "}

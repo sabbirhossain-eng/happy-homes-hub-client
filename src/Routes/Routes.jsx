@@ -27,6 +27,7 @@ import Dogs from "../pages/CategoryPage/Dogs";
 import Rabbits from "../pages/CategoryPage/Rabbits";
 import Birds from "../pages/CategoryPage/Birds";
 import ContactUs from "../pages/ContactUs/ContactUs";
+import Profile from "../Components/Profile/Profile";
 
 export const router = createBrowserRouter([
   {
@@ -105,6 +106,10 @@ export const router = createBrowserRouter([
     ),
     children: [
       // user dashboard
+      {
+        path: "profile",
+        element: <Profile/>
+      },
       {
         path: "addPet",
         element: <AddPet />,

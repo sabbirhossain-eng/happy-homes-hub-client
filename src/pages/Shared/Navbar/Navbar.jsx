@@ -186,21 +186,10 @@ const NavBar = () => {
                               ? "text-primary-light font-bold "
                               : "dark:text-in-dark hover:text-primary-light dark:hover:text-primary-light  transition-all duration-300 ease-in-out"
                           } no-underline font-semibold text-lg lg:hover:bg-none  lg:p-0 w-full inline-block rounded-[10px]`}
-                          to={"/dashboard"}
+                          to={"/dashboard/profile"}
                         >
                           Dashboard
                         </Link>
-                        <Link
-                          className={` ${
-                            pathname === "/profile"
-                              ? "text-primary-light font-bold "
-                              : "dark:text-in-dark hover:text-primary-light dark:hover:text-primary-light  transition-all duration-300 ease-in-out"
-                          } no-underline font-semibold text-lg lg:hover:bg-none  lg:p-0 w-full inline-block rounded-[10px]`}
-                          to={"/profile"}
-                        >
-                          Profile
-                        </Link>
-
                         <div className="h-[1px] bg-gray-400 w-full"></div>
                         <li onClick={handleLogOut} className="w-full">
                           <a className=" flex items-center gap-2 dark:text-in-dark w-full text-lg font-medium cursor-pointer dark:hover:text-primary-light  hover:text-primary-light transition-all duration-300 ease-in-out">
