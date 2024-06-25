@@ -209,7 +209,7 @@ const DonationModal = ({ handleOpen, open, user, amount, name, image }) => {
           <CardFooter className="pt-0">
             <Button
               type="submit"
-              className=" btn bg-[#f6ab4a] text-white"
+              className=" btn bg-primary-light text-black"
              
               
             >

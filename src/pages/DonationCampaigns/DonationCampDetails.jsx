@@ -38,7 +38,7 @@ const DonationCampDetails = () => {
   return (
     <div>
       <Elements stripe={stripePromise}>
-      <Card className=" w-full overflow-hidden">
+      <Card className=" w-full overflow-hidden dark:bg-card-dark dark:text-in-dark">
         <CardHeader
           floated={false}
           shadow={false}
@@ -48,46 +48,46 @@ const DonationCampDetails = () => {
           <img src={image} alt={name} className="h-full w-full object-cover" />
         </CardHeader>
         <CardBody>
-          <Typography variant="h4" color="blue-gray">
+          <Typography variant="h4" className="text-primary-light" >
             {name}
           </Typography>
           <div className="flex justify-between">
             <Typography
               variant="lead"
-              color="gray"
+              
               className="mt-3 font-normal"
             >
               Last date: {lastDate}
             </Typography>
             <Typography
               variant="lead"
-              color="gray"
+              
               className="mt-3 font-normal"
             >
               Post date: {splitDate(date)}
             </Typography>
           </div>
-          <Typography variant="lead" color="gray" className="mt-3 font-normal">
+          <Typography variant="lead"  className="mt-3 font-normal">
             Donation maximum amount : ${amount}
           </Typography>
           <Typography
             variant="small"
-            color="gray"
+            
             className="mt-3 font-normal opacity-75"
           >
             <span className="text-lg text-black">Summary:</span>{" "}
             {short_description}
           </Typography>
-          <hr className="my-4 bg-[#f6ab4a] p-[1px]" />
+          <hr className="my-4 bg-primary-light p-[1px]" />
           <Typography
-            color="blue-gray"
-            className="font-semibold text-center text-3xl mb-2"
+            
+            className="font-semibold text-center text-3xl mb-2 text-primary-light"
           >
             {name} Details
           </Typography>
           <Typography
             variant="small"
-            color="gray"
+            
             className="font-normal opacity-75"
           >
             {description}
@@ -99,7 +99,7 @@ const DonationCampDetails = () => {
               onClick={handleOpen}
               ripple={false}
               fullWidth={true}
-              className="bg-[#f6ab4a] text-white shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
+              className="bg-primary-light text-black shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
             >
               Donation Now !
             </Button>
