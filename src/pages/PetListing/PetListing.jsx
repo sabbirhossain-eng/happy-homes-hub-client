@@ -2,7 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import useAxiosPublic from "../../Hooks/useAxiosPublic";
 import ItemCard from "../../Components/ItemCard";
 import { useState } from "react";
-import { FaSearchengin } from "react-icons/fa6";
+import { CiFilter } from "react-icons/ci";
 import { Helmet } from "react-helmet";
 
 const PetListing = () => {
@@ -50,16 +50,16 @@ const PetListing = () => {
             type="text"
             placeholder="Search pet name..."
             value={searchItem}
-            className="input input-bordered input-warning w-full relative"
+            className="input input-bordered border-primary-light w-full relative"
             onChange={handleSearchChange}
           />
         </div>
         <div>
-          <FaSearchengin className="text-[#4e2c2c] text-4xl  " />
+          <CiFilter className="text-primary-light text-4xl" />
         </div>
         <div>
           <select
-            className="select select-warning w-full"
+            className="select border-primary-light w-full"
             value={searchCategory}
             onChange={handleCategoryChange}
           >
@@ -71,7 +71,7 @@ const PetListing = () => {
           </select>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-20 mt-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-20 mt-8 px-4 lg:px-8">
         {sortedItems.map((item) => (
           <ItemCard key={item._id} item={item} />
         ))}
