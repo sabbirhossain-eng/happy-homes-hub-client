@@ -109,12 +109,13 @@ console.log(data[0]);
                     {pet.amount}
                   </StyledTableCell>
                     {/* Campaign Status */}
-                    <StyledTableCell align="right">
+                    <StyledTableCell align="right"
+                    className="text-blue-400"
+                    >
                     {!pet.donation ? (
                       <Button
                         onClick={() => handleCampaign(pet)}
                         variant="outlined"
-                        color="warning"
                       >
                         Active
                       </Button>
@@ -122,7 +123,6 @@ console.log(data[0]);
                       <Button
                         onClick={() => handleCampaign(pet)}
                         variant="outlined"
-                        color="warning"
                       >
                         Pause
                       </Button>
@@ -132,7 +132,7 @@ console.log(data[0]);
                   <StyledTableCell align="right">
                     <Link to={`/dashboard/campaignEdit/${pet._id}`}>
                     <Button>
-                    <BorderColorIcon color="warning" />
+                    <BorderColorIcon className="text-blue-400" />
                     </Button>
                     </Link>
                   </StyledTableCell>

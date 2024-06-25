@@ -116,7 +116,9 @@ const MyDonationCard = ({ data, refetch }) => {
                       $ {pet.amount}
                     </StyledTableCell>
                     {/* delete btn */}
-                    <StyledTableCell align="right">
+                    <StyledTableCell align="right"
+                    className="text-red-500"
+                    >
                       <Button onClick={() => handleRefund(pet._id)}>
                         Refund
                       </Button>

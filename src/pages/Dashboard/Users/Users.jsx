@@ -135,12 +135,13 @@ const Users = () => {
                     </StyledTableCell>
                     <StyledTableCell align="right">{user.role}</StyledTableCell>
                     {/* Make Admin */}
-                    <StyledTableCell align="right">
+                    <StyledTableCell align="right"
+                    className="text-blue-400"
+                    >
                       {user.role === "user" ? (
                         <Button
                           onClick={() => handleMakeAdmin(user)}
                           variant="outlined"
-                          color="warning"
                         >
                           Make Admin
                         </Button>
@@ -148,7 +149,6 @@ const Users = () => {
                         <Button
                           onClick={() => handleAdminOut(user)}
                           variant="outlined"
-                          color="warning"
                         >
                           Admin Out
                         </Button>

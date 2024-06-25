@@ -1,7 +1,6 @@
 import { NavLink, Outlet } from "react-router-dom";
 import useAuth from "../Hooks/useAuth";
 import useAdmin from "../Hooks/useAdmin";
-import NavBar from "../pages/Shared/Navbar/Navbar";
 import { IoPersonCircle } from "react-icons/io5";
 import { IoMdAddCircle } from "react-icons/io";
 import { MdPets } from "react-icons/md";
@@ -18,27 +17,26 @@ const Dashboard = () => {
 
   return (
     <div>
-      <NavBar />
       <div className="flex">
         {/* sidebar */}
-        <div className="w-56 pt-24 min-h-screen border-brown-600 border-r-4">
+        <div className="w-56 pt-24 min-h-screen border-primary-light border-r-4">
           <ul className="menu  font-medium capitalize space-y-4">
             {isAdmin[0] ? (
               <>
                 <div className=" flex justify-start">
                   <div className="flex items-center">
-                  <MdAdminPanelSettings className="text-xl text-[#4e2c2c] mr-2" />
+                  <MdAdminPanelSettings className="text-xl text-primary-light mr-2" />
                   {user?.displayName} (Admin)
                   </div>
                 </div>
                 <div className="divider"></div>
                 <div className=" flex justify-start">
                   <div className="flex items-center">
-                  <FaUsers className="text-xl text-[#4e2c2c] mr-2" />
+                  <FaUsers className="text-xl text-primary-light mr-2" />
                   <NavLink
                     to="/dashboard/admin_users"
                     className={({ isActive }) =>
-                      isActive ? "text-white bg-[#f6ab4a] p-1 rounded" : ""
+                      isActive ? "text-primary-light  p-1 rounded" : ""
                     }
                   >
                     Users
@@ -47,11 +45,11 @@ const Dashboard = () => {
                 </div>
                 <div className=" flex justify-start">
                   <div className="flex items-center">
-                  <MdPets className="text-xl text-[#4e2c2c] mr-2" />
+                  <MdPets className="text-xl text-primary-light mr-2" />
                   <NavLink
                     to="/dashboard/allPets"
                     className={({ isActive }) =>
-                      isActive ? "text-white bg-[#f6ab4a] p-1 rounded" : ""
+                      isActive ? "text-primary-light  p-1 rounded" : ""
                     }
                   >
                     All Pets
@@ -60,11 +58,11 @@ const Dashboard = () => {
                 </div>
                 <div className=" flex justify-start">
                   <div className="flex items-center">
-                  <MdPayments className="text-xl text-[#4e2c2c] mr-2" />
+                  <MdPayments className="text-xl text-primary-light mr-2" />
                   <NavLink
                     to="/dashboard/allDonations"
                     className={({ isActive }) =>
-                      isActive ? "text-white bg-[#f6ab4a] p-1 rounded" : ""
+                      isActive ? "text-primary-light  p-1 rounded" : ""
                     }
                   >
                     All Donations
@@ -76,7 +74,7 @@ const Dashboard = () => {
               <>
                 <div className=" flex justify-start">
                   <div className="flex items-center">
-                  <IoPersonCircle className="text-xl text-[#4e2c2c] mr-2" />
+                  <IoPersonCircle className="text-xl text-primary-light mr-2" />
                   {" "}
                   {user?.displayName}
                   </div>
@@ -84,11 +82,11 @@ const Dashboard = () => {
                 <div className="divider"></div>
                 <div className=" flex justify-start">
                   <div className="flex items-center">
-                    <IoMdAddCircle className="text-xl text-[#4e2c2c] mr-2" />
+                    <IoMdAddCircle className="text-xl text-primary-light mr-2" />
                     <NavLink
                       to="/dashboard/addPet"
                       className={({ isActive }) =>
-                        isActive ? "text-white bg-[#f6ab4a] p-1 rounded" : ""
+                        isActive ? "text-primary-light  p-1 rounded" : ""
                       }
                     >
                       Add a Pet
@@ -97,11 +95,11 @@ const Dashboard = () => {
                 </div>
                 <div className=" flex justify-start">
                   <div className="flex items-center">
-                    <MdPets className="text-xl text-[#4e2c2c] mr-2" />
+                    <MdPets className="text-xl text-primary-light mr-2" />
                     <NavLink
                       to="/dashboard/myAddedPets"
                       className={({ isActive }) =>
-                        isActive ? "text-white bg-[#f6ab4a] p-1 rounded" : ""
+                        isActive ? "text-primary-light  p-1 rounded" : ""
                       }
                     >
                       My added Pets
@@ -110,11 +108,11 @@ const Dashboard = () => {
                 </div>
                 <div className=" flex justify-start">
                   <div className="flex items-center">
-                    <IoNotificationsCircle className="text-xl text-[#4e2c2c] mr-2" />
+                    <IoNotificationsCircle className="text-xl text-primary-light mr-2" />
                     <NavLink
                       to="/dashboard/adoptionReq"
                       className={({ isActive }) =>
-                        isActive ? "text-white bg-[#f6ab4a] p-1 rounded" : ""
+                        isActive ? "text-primary-light  p-1 rounded" : ""
                       }
                     >
                       Adoption Request
@@ -123,11 +121,11 @@ const Dashboard = () => {
                 </div>
                 <div className=" flex justify-start">
                   <div className="flex items-center">
-                    <IoIosCreate className="text-xl text-[#4e2c2c] mr-2" />
+                    <IoIosCreate className="text-xl text-primary-light mr-2" />
                     <NavLink
                       to="/dashboard/createDonation"
                       className={({ isActive }) =>
-                        isActive ? "text-white bg-[#f6ab4a] p-1 rounded" : ""
+                        isActive ? "text-primary-light  p-1 rounded" : ""
                       }
                     >
                       Create Donation Campaign
@@ -136,11 +134,11 @@ const Dashboard = () => {
                 </div>
                 <div className=" flex justify-start">
                   <div className="flex items-center">
-                    <RiAdvertisementFill className="text-xl text-[#4e2c2c] mr-2" />
+                    <RiAdvertisementFill className="text-xl text-primary-light mr-2" />
                     <NavLink
                       to="/dashboard/MyDonationCampaign"
                       className={({ isActive }) =>
-                        isActive ? "text-white bg-[#f6ab4a] p-1 rounded" : ""
+                        isActive ? "text-primary-light  p-1 rounded" : ""
                       }
                     >
                       My Donation Campaign
@@ -149,11 +147,11 @@ const Dashboard = () => {
                 </div>
                 <div className=" flex justify-start">
                   <div className="flex items-center">
-                    <BsFillEaselFill className="text-xl text-[#4e2c2c] mr-2" />
+                    <BsFillEaselFill className="text-xl text-primary-light mr-2" />
                     <NavLink
                       to="/dashboard/myDonations"
                       className={({ isActive }) =>
-                        isActive ? "text-white bg-[#f6ab4a] p-1 rounded" : ""
+                        isActive ? "text-primary-light  p-1 rounded" : ""
                       }
                     >
                       My Donations

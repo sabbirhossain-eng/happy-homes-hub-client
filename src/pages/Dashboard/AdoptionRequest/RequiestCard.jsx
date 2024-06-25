@@ -106,7 +106,7 @@ const RequiestCard = ({ data, refetch }) => {
                         <Button
                           onClick={() => handleAdopted(adopt)}
                           variant="outlined"
-                          color="warning"
+                          className="text-orange-500"
                         >
                           Not Adopted
                         </Button>
@@ -114,7 +114,7 @@ const RequiestCard = ({ data, refetch }) => {
                         <Button
                           onClick={() => handleAdopted(adopt)}
                           variant="outlined"
-                          color="warning"
+                          className="text-blue-400"
                         >
                           Adopted
                         </Button>

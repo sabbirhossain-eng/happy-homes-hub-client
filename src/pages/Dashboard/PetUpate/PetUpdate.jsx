@@ -79,7 +79,7 @@ const PetUpdate = () => {
             <input
               {...register("image")}
               type="file"
-              className="file-input file-input-bordered file-input-warning w-full"
+              className="file-input file-input-bordered transition transform hover:scale-110 w-full"
             />
           </div>
         </div>
@@ -151,7 +151,7 @@ const PetUpdate = () => {
         </div>
 
         <div className="flex justify-center">
-          <button className="btn flex  text-white bg-[#f6ab4a]">
+          <button className="btn flex  text-black bg-primary-light">
             Update Pet
           </button>
         </div>

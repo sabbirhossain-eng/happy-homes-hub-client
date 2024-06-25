@@ -131,7 +131,7 @@ const AddPet = () => {
                     setImage(e.target.files[0])
                    
                   }}
-                  className="file-input file-input-bordered file-input-warning w-full"
+                  className="file-input file-input-bordered file:bg-primary-light file:border-primary-light w-full text-black"
                 />
                 <ErrorMessage
                   name="image"
@@ -229,10 +229,10 @@ const AddPet = () => {
                 placeholder=" About the pet or small note"
               />
             </div>
-            <div>
+            <div className="flex justify-end">
               <button
                 type="submit"
-                className="btn flex text-white bg-[#f6ab4a]"
+                className="btn text-black bg-primary-light"
               >
                 Add Pet
               </button>

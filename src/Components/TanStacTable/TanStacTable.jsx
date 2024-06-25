@@ -140,7 +140,7 @@ console.log(data[0]);
                   <StyledTableCell align="right">
                     <Link to={`/dashboard/petUpdate/${pet._id}`}>
                     <Button>
-                    <BorderColorIcon color="warning" />
+                    <BorderColorIcon className="text-blue-400" />
                     </Button>
                     </Link>
                   </StyledTableCell>
@@ -150,7 +150,7 @@ console.log(data[0]);
                       <Button
                         onClick={() => handleAdopted(pet)}
                         variant="outlined"
-                        color="warning"
+                        className="text-blue-400"
                       >
                         Not Adopted
                       </Button>
@@ -158,7 +158,7 @@ console.log(data[0]);
                       <Button
                         onClick={() => handleAdopted(pet)}
                         variant="outlined"
-                        color="warning"
+                        className="text-blue-400"
                       >
                         Adopted
                       </Button>
@@ -167,7 +167,7 @@ console.log(data[0]);
                   {/* delete btn */}
                   <StyledTableCell align="right">
                     <Button onClick={() => handleDeletePet(pet._id)}>
-                      <DeleteIcon color="warning" />
+                      <DeleteIcon className="text-red-500" />
                     </Button>
                   </StyledTableCell>
                 </StyledTableRow>
