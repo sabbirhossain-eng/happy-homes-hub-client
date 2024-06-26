@@ -1,3 +1,4 @@
+import { HashLink } from "react-router-hash-link";
 import logo from "../../../assets/Logo/Happy Homes HUb.png";
 const Footers = () => {
 
@@ -24,11 +25,13 @@ const Footers = () => {
                   </h2>
                 </div>
                 <ul className="leading-8">
+                  <HashLink smooth to="/#aboutUs">
                   <li>
-                    <a href="#" className="hover:text-primary-light">
+                    <a className="hover:text-primary-light">
                       About Us
                     </a>
                   </li>
+                  </HashLink>
                   <li>
                     <a href="#" className="hover:text-primary-light">
                       Terms &amp; Conditions
@@ -39,11 +42,13 @@ const Footers = () => {
                       Privacy Policy
                     </a>
                   </li>
+                  <HashLink smooth to="/#contactUs">
                   <li>
-                    <a href="#" className="hover:text-primary-light">
+                    <a className="hover:text-primary-light">
                       Contact Us
                     </a>
                   </li>
+                  </HashLink>
                 </ul>
               </div>
               <div className="px-4 my-4 w-full sm:w-auto">

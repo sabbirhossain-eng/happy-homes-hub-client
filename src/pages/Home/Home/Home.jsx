@@ -16,7 +16,9 @@ const Home = () => {
       <Category />
       <CountUpStat/>
       <CallToAction />
+      <div id="aboutUs">
       <About />
+      </div>
       <div id="contactUs">
       <ContactUs/>
       </div>

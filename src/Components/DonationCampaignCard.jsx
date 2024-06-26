@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 const DonationCampaignCard = ({ item }) => {
   return (
     <div>
-      <Card className="mt-6 w-96 dark:bg-card-dark dark:text-in-dark" data-aos="fade-up" data-aos-duration="2000">
+      <Card className="mt-6 w-96 dark:bg-card-dark dark:text-in-dark mx-auto" data-aos="fade-up" data-aos-duration="2000">
         <CardHeader className="relative h-56">
           <img src={item.image} className="w-full h-full" alt="card-image" />
         </CardHeader>
