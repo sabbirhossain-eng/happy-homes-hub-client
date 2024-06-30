@@ -106,7 +106,7 @@ const NavBar = () => {
             <Typography
              onClick={handleClick}
               as="a"
-              href="#"
+              href="/"
               className="mr-4 cursor-pointer py-1.5 flex-1"
             >
               <img src={logo} alt="logo" />
